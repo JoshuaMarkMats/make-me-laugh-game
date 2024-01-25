@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
     [Space()]
 
     [SerializeField]
-    private float currentStamina;
+    private float currentStamina = 50;
     [SerializeField]
     private float maxStamina = 50;
     [SerializeField]
@@ -83,8 +83,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
+        staminaBar.SetValue(currentStamina);
     }
 
     void Update()
