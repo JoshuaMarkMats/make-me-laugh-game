@@ -12,13 +12,18 @@ public class AttackArea : MonoBehaviour
         areaCollider = GetComponent<Collider2D>();
     }
 
-    public void Attack()
+    public void Attack(int damage)
     {
         areaCollider.Overlap(hitTargets);
 
-        foreach (Collider2D collider in hitTargets)
+        foreach (Collider2D target in hitTargets)
         {
-            Debug.Log("Attacked: " + collider.gameObject.name);
+            if (target.TryGetComponent<IDamageable>(out var damageable))
+            {
+                Debug.Log($"Attacked {target.gameObject.name} for {damage}");
+                damageable.ChangeHealth(-damage);
+            }
+            
         }
     }
 }
