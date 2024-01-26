@@ -30,7 +30,10 @@ public class PlayerController : MonoBehaviour, IDamageable
     private Sprite highSanityImage;
     [SerializeField]
     private Sprite veryHighSanityImage;
-    
+
+    public bool IsMovementPaused = false;
+
+    public Animator animator;
     private Vector2 moveDirection = Vector2.zero;
     private Rigidbody2D playerRigidbody;  
 
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         sanityBar.SetMaxValue(maxSanity);
         sanityBar.SetValue(currentSanity);
 
@@ -49,8 +54,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (!isSane || IsMovementPaused)
+            return;
+
         playerRigidbody.MovePosition((Vector2)transform.position + moveDirection * moveSpeed);
     }
 

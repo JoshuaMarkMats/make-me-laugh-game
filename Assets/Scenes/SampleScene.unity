@@ -2633,6 +2633,7 @@ GameObject:
   - component: {fileID: 1444135703}
   - component: {fileID: 1444135707}
   - component: {fileID: 1444135708}
+  - component: {fileID: 1444135709}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -2751,7 +2752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a39479d5c50cc4491d36346e3d36f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
+  moveSpeed: 0.06
   currentSanity: 30
   maxSanity: 100
   SanityRestoreOnBossKill: 5
@@ -2762,6 +2763,8 @@ MonoBehaviour:
   mediumSanityImage: {fileID: -5734438988675653137, guid: 4abfb256267e84f4b88abdb960144986, type: 3}
   highSanityImage: {fileID: 0}
   veryHighSanityImage: {fileID: -8617291234937718428, guid: 90bfecc22c1411846abff9d862970f2c, type: 3}
+  IsMovementPaused: 0
+  animator: {fileID: 0}
 --- !u!50 &1444135705
 Rigidbody2D:
   serializedVersion: 4
@@ -2870,6 +2873,7 @@ MonoBehaviour:
   boisterousLaughStaminaCost: 25
   boisterousLaughCooldownSlider: {fileID: 1516233838}
   boisterousLaughCooldownText: {fileID: 792483686}
+  playerController: {fileID: 0}
   pivotParent: {fileID: 26908555}
 --- !u!114 &1444135708
 MonoBehaviour:
@@ -2889,6 +2893,28 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!95 &1444135709
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444135700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba9c46c5425aebf4bbec3184c6abb713, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1461349598
 GameObject:
   m_ObjectHideFlags: 0
