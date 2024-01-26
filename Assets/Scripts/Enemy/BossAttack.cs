@@ -6,25 +6,39 @@ using UnityEngine.InputSystem;
 
 public class BossAttack : MonoBehaviour
 {
-    /* Attack */
-    [SerializeField]
-    private int damage = 10;
+    /* Main Stats */
     [SerializeField]
     private float detectionRange = 2f;
-    private bool isAttacking = false;
-    [SerializeField]
-    private string attackSound;
-    [SerializeField]
-    private AttackArea attackArea;
-
     [Space()]
+
+    /* Basic Attack */
+    [SerializeField]
+    private int basicDamage = 10;
+    [SerializeField]
+    private string basicAttackSound;
+    [SerializeField]
+    private AttackArea basicAttackArea;
+    [Space()]
+
+    /* AoE Attack */
+    [SerializeField]
+    private int aoeDamage = 10;
+    [SerializeField]
+    private string aoeAttackSound;
+    [SerializeField]
+    private AttackArea aoeAttackArea;
+    [Space()]
+
     [SerializeField]
     private Transform pivotParent;
+
+    private bool isAttacking = false;
 
     private Enemy enemyController;
     private Animator animator;
 
-    private const string ATTACK_TRIGGER = "attack";
+    private const string BASIC_ATTACK_TRIGGER = "basicAttack";
+    private const string AOE_ATTACK_TRIGGER = "aoeAttack";
     private const string FINISH_ATTACK_TRIGGER = "finishAttack";
 
     void Start()
@@ -45,7 +59,7 @@ public class BossAttack : MonoBehaviour
             {
                 enemyController.IsMovementPaused = true;
                 isAttacking = true;
-                animator.SetTrigger(ATTACK_TRIGGER);
+                animator.SetTrigger(Random.value < 0.5f ? BASIC_ATTACK_TRIGGER : AOE_ATTACK_TRIGGER);
             }
         }            
     }
@@ -61,23 +75,18 @@ public class BossAttack : MonoBehaviour
         Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset, detectionRange);
     }*/
 
-    private void DoDamage()
+    private void DoBasicDamage()
     {
         //AudioManager.Instance.Play(attackSound);
 
-        /*attackDirection = (enemyController.LookDirection < 0) ? Vector2.left : Vector2.right;
+        basicAttackArea.Attack(basicDamage);
+    }
 
-        Collider2D[] targets = Physics2D.OverlapCircleAll((Vector2)transform.position + attackCenterOffset + attackDirection * attackAreaRange, attackAreaRadius, attackableLayers);
+    private void DoAoeDamage()
+    {
+        //AudioManager.Instance.Play(attackSound);
 
-        foreach (Collider2D target in targets)
-        {
-            if (target.TryGetComponent<IDamageable>(out var damageable))
-            {
-                damageable.ChangeHealth(-damage);
-            }
-        }*/
-
-        attackArea.Attack(damage);
+        aoeAttackArea.Attack(aoeDamage);
     }
 
     private void FinishAttack()
