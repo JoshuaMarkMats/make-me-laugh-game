@@ -147,14 +147,12 @@ public class Enemy : PoolableObject, IDamageable
         if (flashCoroutine != null)
             StopCoroutine(flashCoroutine);
         spriteRenderer.material = baseMaterial;
-        StartCoroutine(DeathDelay());
     }
 
-    IEnumerator DeathDelay()
+    private void RemoveEnemy()
     {
-        yield return new WaitForSeconds(deathDuration);
-        gameObject.SetActive(false);
         enemyDeathEvent.Invoke();
+        gameObject.SetActive(false);       
     }
 
     IEnumerator FlashEffect()

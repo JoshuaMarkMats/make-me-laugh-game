@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tanks_crateRepair_0: 1311752102108684794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

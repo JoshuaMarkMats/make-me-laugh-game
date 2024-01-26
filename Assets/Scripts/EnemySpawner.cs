@@ -14,10 +14,27 @@ public class EnemySpawner : MonoBehaviour
 
     [Space()]
 
+    private ObjectPool rangedPool;
+    [SerializeField]
+    private PoolableObject rangedEnemy;
+    public int rangedEnemyCap = 40;
+    private int rangedAlive = 0;
+
+    [Space()]
+
     private ObjectPool bossPool;
     private PoolableObject bossEnemy;
     public int bossEnemyCap = 20;
+
     [Space()]
+
+    private ObjectPool bulletPool;
+    [SerializeField]
+    private PoolableObject bullet;
+    private int bulletCap = 50;
+
+    [Space()]
+
     [SerializeField]
     private float SpawnDelay = 10f;
     [SerializeField]
@@ -41,7 +58,10 @@ public class EnemySpawner : MonoBehaviour
     public void Awake()
     {
         meleePool = ObjectPool.CreateInstance(meleeEnemy, meleeEnemyCap);
+        rangedPool = ObjectPool.CreateInstance(rangedEnemy, rangedEnemyCap);
         //ObjectPool.CreateInstance(bossEnemy, bossEnemyCap);
+
+        bulletPool = ObjectPool.CreateInstance(bullet, bulletCap);
     }
     void Start()
     {
@@ -55,15 +75,27 @@ public class EnemySpawner : MonoBehaviour
 
         while (true)
         {
-            int meleeToSpawn = currentWave; //2x-1
+            int meleeToSpawn = currentWave; // x
             int spawnedMelee = 0;
 
-            Debug.Log($"Trying to spawn {meleeToSpawn} melee");
+            //Debug.Log($"Trying to spawn {meleeToSpawn} melee");
             while (meleeAlive < meleeEnemyCap && spawnedMelee < meleeToSpawn)
             {
                 DoSpawnMelee();
 
                 spawnedMelee++;
+
+                yield return IntervalWait;
+            }
+
+            int rangedToSpawn = currentWave; // x/3
+            int spawnedRanged = 0;
+
+            while (rangedAlive < rangedEnemyCap && spawnedRanged < rangedToSpawn)
+            {
+                DoSpawnRanged();
+
+                spawnedRanged++;
 
                 yield return IntervalWait;
             }
@@ -91,9 +123,8 @@ public class EnemySpawner : MonoBehaviour
         enemy.target = player;
         enemy.IsAlive = true;
         enemy.IsMovementPaused = false;
-        //enemy.currentHealth = enemy.maxHealth;
-        //enemy.health
-        enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        //enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        enemy.transform.position = Random.insideUnitCircle.normalized * spawnDistance;
         enemy.enemyDeathEvent.AddListener(ReduceMeleeCount);
         enemy.gameObject.SetActive(true);
     }
@@ -101,5 +132,32 @@ public class EnemySpawner : MonoBehaviour
     private void ReduceMeleeCount()
     {
         meleeAlive--;
+    }
+
+    private void DoSpawnRanged()
+    {
+        PoolableObject poolableObject = rangedPool.GetObject();
+
+        if (poolableObject == null)
+            return;
+
+        meleeAlive++;
+
+        RangedAttack enemyAttack = poolableObject.GetComponent<RangedAttack>();
+        Enemy enemy = poolableObject.GetComponent<Enemy>();
+
+        enemy.target = player;
+        enemy.IsAlive = true;
+        enemy.IsMovementPaused = false;
+        enemyAttack.bulletPool = bulletPool;
+        //enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        enemy.transform.position = Random.insideUnitCircle.normalized * spawnDistance; 
+        enemy.enemyDeathEvent.AddListener(ReduceRangedCount);
+        enemy.gameObject.SetActive(true);
+    }
+
+    private void ReduceRangedCount()
+    {
+        rangedAlive--;
     }
 }
