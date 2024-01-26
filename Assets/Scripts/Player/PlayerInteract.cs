@@ -35,7 +35,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnInteract()
     {
-        Debug.Log("interacting");
+        //Debug.Log("interacting");
 
         Collider2D focusItem = Physics2D.OverlapCircle(transform.position, interactRange, interactableLayer);
         if (focusItem == null)
@@ -51,9 +51,9 @@ public class PlayerInteract : MonoBehaviour
         {
             Child child = focusItem.GetComponent<Child>();
             if (child != null)
-            {
-                child.GiveGift();
-                giftSlot.RemoveGift();
+            {               
+                if (giftSlot.RemoveGift())
+                    child.GiveGift();
             }
         }
             
