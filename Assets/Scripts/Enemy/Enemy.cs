@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : PoolableObject, IDamageable
 {
     [SerializeField]
     private int maxHealth = 10;
@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour, IDamageable
     private float deathDuration = 1f;
     /*[SerializeField]
     private string deathSound; when audio manager kicks in */
-    //public UnityEvent enemyDeathEvent = new(); track deaths??
+    public UnityEvent enemyDeathEvent = new();
     [Space()]
 
     /* Movement */
@@ -134,7 +134,7 @@ public class Enemy : MonoBehaviour, IDamageable
     protected virtual void EnemyDeath()
     {
         //AudioManager.Instance.Play(deathSound);
-        //enemyDeathEvent.Invoke();
+        
         isAlive = false;
         animator.SetTrigger("death");
         if (flashCoroutine != null)
@@ -146,7 +146,8 @@ public class Enemy : MonoBehaviour, IDamageable
     IEnumerator DeathDelay()
     {
         yield return new WaitForSeconds(deathDuration);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        enemyDeathEvent.Invoke();
     }
 
     IEnumerator FlashEffect()
