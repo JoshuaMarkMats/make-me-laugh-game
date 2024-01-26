@@ -5,5 +5,5 @@ using UnityEngine.Events;
 
 public class LevelScript : MonoBehaviour
 {
-    public static UnityEvent giftPickedUpEvent = new();
+    public static UnityEvent bossKillEvent = new();
 }

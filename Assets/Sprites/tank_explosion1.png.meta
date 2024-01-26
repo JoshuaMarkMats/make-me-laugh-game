@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tank_explosion1_0: 2677838272024661893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,22 +4,20 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : PoolableObject, IDamageable
 {
     [SerializeField]
     private int maxHealth = 10;
     [SerializeField]
     private int currentHealth = 10;
-    [SerializeField]
-    private float deathDuration = 1f;
     /*[SerializeField]
     private string deathSound; when audio manager kicks in */
-    //public UnityEvent enemyDeathEvent = new(); track deaths??
+    public UnityEvent enemyDeathEvent = new();
     [Space()]
 
     /* Movement */
     [SerializeField]
-    protected float baseSpeed = 0.1f;
+    protected float moveSpeed = 0.1f;
     [SerializeField]
     private bool isMovementPaused = false; //enemy movement paused (saves lookX)
     protected Vector2 moveDirection = Vector2.zero; //direction of movement, also used for determining sprite direction for overrides
@@ -39,6 +37,7 @@ public class Enemy : MonoBehaviour, IDamageable
     private float flashDuration = 0.1f;
     private Coroutine flashCoroutine;
 
+    [SerializeField]
     private bool isAlive = true;
     private Animator animator;
     private float lookDirection = 1;
@@ -57,7 +56,13 @@ public class Enemy : MonoBehaviour, IDamageable
     }
     public bool IsMovementPaused { get { return isMovementPaused; } set { isMovementPaused = value; } }
 
-    void Start()
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+        isAlive = true;
+    }
+
+    protected virtual void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -66,7 +71,7 @@ public class Enemy : MonoBehaviour, IDamageable
         baseMaterial = spriteRenderer.material;
     }
 
-    protected virtual void Update()
+    private void Update()
     {
         //if not dead, do sprite movement change
         if (isAlive)
@@ -105,15 +110,15 @@ public class Enemy : MonoBehaviour, IDamageable
             Move();
     }
 
-    protected virtual void Move()
+    private void Move()
     {
-        Vector2 position = (Vector2)transform.position + (baseSpeed * moveDirection);
+        Vector2 position = (Vector2)transform.position + (moveSpeed * moveDirection);
         enemyRigidbody.MovePosition(position);
     }
 
     public void ChangeHealth(int value)
     {
-        //Debug.Log($"changing enemy health by {value}");
+        //Debug.Log($"changing {gameObject.name} health by {value}");
 
         if (!isAlive)
             return;
@@ -131,22 +136,22 @@ public class Enemy : MonoBehaviour, IDamageable
             EnemyDeath();
     }
 
-    private void EnemyDeath()
+    protected virtual void EnemyDeath()
     {
         //AudioManager.Instance.Play(deathSound);
-        //enemyDeathEvent.Invoke();
+        //Debug.Log($"{gameObject.name} dies");
+        
         isAlive = false;
         animator.SetTrigger("death");
-        if (flashCoroutine != null)
-            StopCoroutine(flashCoroutine);
+        /*if (flashCoroutine != null)
+            StopCoroutine(flashCoroutine);*/
         spriteRenderer.material = baseMaterial;
-        StartCoroutine(DeathDelay());
     }
 
-    IEnumerator DeathDelay()
+    private void RemoveEnemy()
     {
-        yield return new WaitForSeconds(deathDuration);
-        Destroy(gameObject);
+        enemyDeathEvent.Invoke();
+        gameObject.SetActive(false);       
     }
 
     IEnumerator FlashEffect()

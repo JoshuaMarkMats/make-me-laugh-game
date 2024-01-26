@@ -8,10 +8,10 @@ public class MeleeAttack : MonoBehaviour
 {
     /* Attack */
     [SerializeField]
-    private int damage = 10;
+    protected int damage = 10;
     [SerializeField]
-    private float detectionRange = 2f;
-    private bool isAttacking = false;
+    protected float detectionRange = 2f;
+    protected bool isAttacking = false;
     [SerializeField]
     private string attackSound;
     [SerializeField]
@@ -21,10 +21,10 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField]
     private Transform pivotParent;
 
-    private Enemy enemyController;
-    private Animator animator;
+    protected Enemy enemyController;
+    protected Animator animator;
 
-    private const string ATTACK_TRIGGER = "attack";
+    protected const string ATTACK_TRIGGER = "attack";
     private const string FINISH_ATTACK_TRIGGER = "finishAttack";
 
     void Start()
@@ -34,7 +34,7 @@ public class MeleeAttack : MonoBehaviour
         //enemyController.enemyDeathEvent.AddListener(CancelAttack);
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (!isAttacking && enemyController.IsAlive)
         {
@@ -50,32 +50,16 @@ public class MeleeAttack : MonoBehaviour
         }            
     }
 
-    /*private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
-        //attack areas
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset + Vector2.left * attackAreaRange, attackAreaRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset + Vector2.right * attackAreaRange, attackAreaRadius);
         //detection range
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset, detectionRange);
-    }*/
+        Gizmos.DrawWireSphere((Vector2)transform.position, detectionRange);
+    }
 
-    private void DoDamage()
+    protected virtual void DoDamage()
     {
         //AudioManager.Instance.Play(attackSound);
-
-        /*attackDirection = (enemyController.LookDirection < 0) ? Vector2.left : Vector2.right;
-
-        Collider2D[] targets = Physics2D.OverlapCircleAll((Vector2)transform.position + attackCenterOffset + attackDirection * attackAreaRange, attackAreaRadius, attackableLayers);
-
-        foreach (Collider2D target in targets)
-        {
-            if (target.TryGetComponent<IDamageable>(out var damageable))
-            {
-                damageable.ChangeHealth(-damage);
-            }
-        }*/
 
         attackArea.Attack(damage);
     }
