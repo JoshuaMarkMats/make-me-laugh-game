@@ -10,8 +10,6 @@ public class Enemy : PoolableObject, IDamageable
     private int maxHealth = 10;
     [SerializeField]
     private int currentHealth = 10;
-    [SerializeField]
-    private float deathDuration = 1f;
     /*[SerializeField]
     private string deathSound; when audio manager kicks in */
     public UnityEvent enemyDeathEvent = new();
@@ -19,7 +17,7 @@ public class Enemy : PoolableObject, IDamageable
 
     /* Movement */
     [SerializeField]
-    protected float baseSpeed = 0.1f;
+    protected float moveSpeed = 0.1f;
     [SerializeField]
     private bool isMovementPaused = false; //enemy movement paused (saves lookX)
     protected Vector2 moveDirection = Vector2.zero; //direction of movement, also used for determining sprite direction for overrides
@@ -64,7 +62,7 @@ public class Enemy : PoolableObject, IDamageable
         isAlive = true;
     }
 
-    void Start()
+    protected virtual void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -114,7 +112,7 @@ public class Enemy : PoolableObject, IDamageable
 
     private void Move()
     {
-        Vector2 position = (Vector2)transform.position + (baseSpeed * moveDirection);
+        Vector2 position = (Vector2)transform.position + (moveSpeed * moveDirection);
         enemyRigidbody.MovePosition(position);
     }
 

@@ -199,11 +199,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 4
   currentHealth: 4
-  deathDuration: 5
   enemyDeathEvent:
     m_PersistentCalls:
       m_Calls: []
-  baseSpeed: 0.05
+  moveSpeed: 0.05
   isMovementPaused: 0
   target: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}

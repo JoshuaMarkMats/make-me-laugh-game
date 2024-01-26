@@ -64,16 +64,12 @@ public class BossAttack : MonoBehaviour
         }            
     }
 
-    /*private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
-        //attack areas
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset + Vector2.left * attackAreaRange, attackAreaRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset + Vector2.right * attackAreaRange, attackAreaRadius);
         //detection range
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere((Vector2)transform.position + attackCenterOffset, detectionRange);
-    }*/
+        Gizmos.DrawWireSphere((Vector2)transform.position, detectionRange);
+    }
 
     private void DoBasicDamage()
     {
