@@ -1,133 +1,154 @@
 fileFormatVersion: 2
-guid: 8e3a63dd8a32bd343ac5293c1e127607
+guid: c828b4695dc9cc44bb251b351c0cffa1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2792402802363126846
-    second: Eyeball_0
+      213: 768489970394718587
+    second: Reaver_0
   - first:
-      213: 112571745976006824
-    second: Eyeball_1
+      213: 9161280034866931038
+    second: Reaver_1
   - first:
-      213: 4696390048660997592
-    second: Eyeball_2
+      213: -8976910749224536758
+    second: Reaver_2
   - first:
-      213: -7149191858110582771
-    second: Eyeball_3
+      213: 406812350877857481
+    second: Reaver_3
   - first:
-      213: -4539880026570852370
-    second: Eyeball_4
+      213: -1830147713947307596
+    second: Reaver_4
   - first:
-      213: -8802191901591396175
-    second: Eyeball_5
+      213: -9041936588555404483
+    second: Reaver_5
   - first:
-      213: -7401047152809302156
-    second: Eyeball_6
+      213: -8400611395018098674
+    second: Reaver_6
   - first:
-      213: -3755351595799010515
-    second: Eyeball_7
+      213: 8664794877152693997
+    second: Reaver_7
   - first:
-      213: -6532215143079718499
-    second: Eyeball_8
+      213: -1050057034731732562
+    second: Reaver_8
   - first:
-      213: -4898622871031195346
-    second: Eyeball_9
+      213: 6328014704832858036
+    second: Reaver_9
   - first:
-      213: -5118414881637855136
-    second: Eyeball_10
+      213: -482327133119346855
+    second: Reaver_10
   - first:
-      213: 1343987463295443880
-    second: Eyeball_11
+      213: -4755203348933068168
+    second: Reaver_11
   - first:
-      213: -5459812569046549345
-    second: Eyeball_12
+      213: -1447216697555157954
+    second: Reaver_12
   - first:
-      213: 3192425259646650665
-    second: Eyeball_13
+      213: 2270544750729225160
+    second: Reaver_13
   - first:
-      213: -1505946986294218185
-    second: Eyeball_14
+      213: 1656805635504729469
+    second: Reaver_14
   - first:
-      213: 8094998680276224429
-    second: Eyeball_15
+      213: -6816568951904055431
+    second: Reaver_15
   - first:
-      213: 8691396837579471808
-    second: Eyeball_16
+      213: 6944804870217544705
+    second: Reaver_16
   - first:
-      213: -3585724762064130786
-    second: Eyeball_17
+      213: 3104463202105812821
+    second: Reaver_17
   - first:
-      213: 6438974662504008749
-    second: Eyeball_18
+      213: -423010730489537750
+    second: Reaver_18
   - first:
-      213: 2601881548812068405
-    second: Eyeball_19
+      213: 407310975662466109
+    second: Reaver_19
   - first:
-      213: 2348149583506306326
-    second: Eyeball_20
+      213: -955234492466517522
+    second: Reaver_20
   - first:
-      213: 5985102853082884707
-    second: Eyeball_21
+      213: 6793541432988644507
+    second: Reaver_21
   - first:
-      213: 5696006130516564053
-    second: Eyeball_22
+      213: -7230934149877745519
+    second: Reaver_22
   - first:
-      213: -4860793884792443995
-    second: Eyeball_23
+      213: -6040262635627364228
+    second: Reaver_23
   - first:
-      213: 2284130327909697684
-    second: Eyeball_24
+      213: -2910298069922149823
+    second: Reaver_24
   - first:
-      213: -7221263445876497772
-    second: Eyeball_25
+      213: 7535101890316248999
+    second: Reaver_25
   - first:
-      213: -139067054879647722
-    second: Eyeball_26
+      213: 3784355648809014468
+    second: Reaver_26
   - first:
-      213: 9131673458208755608
-    second: Eyeball_27
+      213: -400209422920841783
+    second: Reaver_27
   - first:
-      213: 1383833439341927371
-    second: Eyeball_28
+      213: 2032912504438692113
+    second: Reaver_28
   - first:
-      213: -4188581407059609792
-    second: Eyeball_29
+      213: -4923333352668474041
+    second: Reaver_29
   - first:
-      213: 1865254085143038504
-    second: Eyeball_30
+      213: 5738186238337842534
+    second: Reaver_30
   - first:
-      213: 9024858007967315037
-    second: Eyeball_31
+      213: -5163218615073052593
+    second: Reaver_31
   - first:
-      213: 7744629775802259434
-    second: Eyeball_32
+      213: 4196823739363124277
+    second: Reaver_32
   - first:
-      213: -3622379725202221471
-    second: Eyeball_33
+      213: -7498504854651132147
+    second: Reaver_33
   - first:
-      213: -7495365449961883875
-    second: Eyeball_34
+      213: -7048239533192190483
+    second: Reaver_34
   - first:
-      213: 2843884284515066703
-    second: Eyeball_35
+      213: -8463919406819288415
+    second: Reaver_35
   - first:
-      213: 2582755964617286445
-    second: Eyeball_36
+      213: 846186858587657794
+    second: Reaver_36
   - first:
-      213: 3399143536779294034
-    second: Eyeball_37
+      213: -6209850651008980774
+    second: Reaver_37
   - first:
-      213: -33457845688505267
-    second: Eyeball_38
+      213: -4934117490543876472
+    second: Reaver_38
   - first:
-      213: 2477488928847304404
-    second: Eyeball_39
+      213: -8602313642066417902
+    second: Reaver_39
   - first:
-      213: 2838899979356980634
-    second: Eyeball_40
+      213: -4023586781041146989
+    second: Reaver_40
   - first:
-      213: -2597421708680675041
-    second: Eyeball_41
+      213: -608308746936612993
+    second: Reaver_41
+  - first:
+      213: -5774984317051413
+    second: Reaver_42
+  - first:
+      213: -1063797321910548676
+    second: Reaver_43
+  - first:
+      213: -6604491242114114461
+    second: Reaver_44
+  - first:
+      213: -1082060166456253427
+    second: Reaver_45
+  - first:
+      213: 2061848417059615927
+    second: Reaver_46
+  - first:
+      213: 1874201831274248435
+    second: Reaver_47
+  - first:
+      213: 2871722425841346670
+    second: Reaver_48
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -221,11 +242,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eyeball_0
+      name: Reaver_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -235,18 +256,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb275f22746f39d0800000000000000
-      internalID: -2792402802363126846
+      spriteID: b71e3d27e893aaa00800000000000000
+      internalID: 768489970394718587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_1
+      name: Reaver_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -256,18 +277,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a835a2186fef8100800000000000000
-      internalID: 112571745976006824
+      spriteID: e552f1637a7632f70800000000000000
+      internalID: 9161280034866931038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_2
+      name: Reaver_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -277,18 +298,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d54e11edddec2140800000000000000
-      internalID: 4696390048660997592
+      spriteID: a45f51c3c3b9b6380800000000000000
+      internalID: -8976910749224536758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_3
+      name: Reaver_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -298,18 +319,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d00343212e7f8cc90800000000000000
-      internalID: -7149191858110582771
+      spriteID: 9c6f0508da945a500800000000000000
+      internalID: 406812350877857481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_4
+      name: Reaver_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -319,18 +340,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee77a5d4b2b1ff0c0800000000000000
-      internalID: -4539880026570852370
+      spriteID: 4b17da7c9520a96e0800000000000000
+      internalID: -1830147713947307596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_5
+      name: Reaver_5
       rect:
         serializedVersion: 2
         x: 320
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -340,18 +361,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b023dcf91558d580800000000000000
-      internalID: -8802191901591396175
+      spriteID: d3b3c853496948280800000000000000
+      internalID: -9041936588555404483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_6
+      name: Reaver_6
       rect:
         serializedVersion: 2
         x: 384
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -361,18 +382,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 477a2e2b3d23a4990800000000000000
-      internalID: -7401047152809302156
+      spriteID: e08f8dfc1780b6b80800000000000000
+      internalID: -8400611395018098674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_7
+      name: Reaver_7
       rect:
         serializedVersion: 2
         x: 448
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -382,18 +403,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2324bdce9f42ebc0800000000000000
-      internalID: -3755351595799010515
+      spriteID: dee8f4068098f3870800000000000000
+      internalID: 8664794877152693997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_8
+      name: Reaver_8
       rect:
         serializedVersion: 2
         x: 512
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -403,18 +424,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d915e40cfe8e855a0800000000000000
-      internalID: -6532215143079718499
+      spriteID: ea14aeab0b27d61f0800000000000000
+      internalID: -1050057034731732562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_9
+      name: Reaver_9
       rect:
         serializedVersion: 2
         x: 576
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -424,18 +445,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e29d49be378940cb0800000000000000
-      internalID: -4898622871031195346
+      spriteID: 4b7c207c8df91d750800000000000000
+      internalID: 6328014704832858036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_10
+      name: Reaver_10
       rect:
         serializedVersion: 2
         x: 640
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -445,18 +466,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06017ee98ccb7f8b0800000000000000
-      internalID: -5118414881637855136
+      spriteID: 95783e4270e6e49f0800000000000000
+      internalID: -482327133119346855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_11
+      name: Reaver_11
       rect:
         serializedVersion: 2
         x: 704
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -466,18 +487,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a3ad442a7dc6a210800000000000000
-      internalID: 1343987463295443880
+      spriteID: 87ab8109fbf120eb0800000000000000
+      internalID: -4755203348933068168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_12
+      name: Reaver_12
       rect:
         serializedVersion: 2
         x: 768
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -487,18 +508,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9c74c15569da34b0800000000000000
-      internalID: -5459812569046549345
+      spriteID: e3cf53dc4147aebe0800000000000000
+      internalID: -1447216697555157954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_13
+      name: Reaver_13
       rect:
         serializedVersion: 2
         x: 832
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -508,18 +529,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92909350cd5cd4c20800000000000000
-      internalID: 3192425259646650665
+      spriteID: 8c3e7d1cb68928f10800000000000000
+      internalID: 2270544750729225160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_14
+      name: Reaver_14
       rect:
         serializedVersion: 2
         x: 896
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -529,17 +550,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 732fc5fd13dc91be0800000000000000
-      internalID: -1505946986294218185
+      spriteID: d7def1682f72ef610800000000000000
+      internalID: 1656805635504729469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_15
+      name: Reaver_15
       rect:
         serializedVersion: 2
-        x: 960
+        x: 0
         y: 128
         width: 64
         height: 64
@@ -550,17 +571,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da9ce1b1966375070800000000000000
-      internalID: 8094998680276224429
+      spriteID: 97f4dca67aea661a0800000000000000
+      internalID: -6816568951904055431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_16
+      name: Reaver_16
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 64
         y: 128
         width: 64
         height: 64
@@ -571,17 +592,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cbb0e1ff5b0e9870800000000000000
-      internalID: 8691396837579471808
+      spriteID: 10438bbfb37e06060800000000000000
+      internalID: 6944804870217544705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_17
+      name: Reaver_17
       rect:
         serializedVersion: 2
-        x: 1088
+        x: 128
         y: 128
         width: 64
         height: 64
@@ -592,14 +613,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1d68dea352fc3ec0800000000000000
-      internalID: -3585724762064130786
+      spriteID: 557e9cb85d4451b20800000000000000
+      internalID: 3104463202105812821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_18
+      name: Reaver_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b1ef85bf9212af0800000000000000
+      internalID: -423010730489537750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34aa71ac2f07a500800000000000000
+      internalID: 407310975662466109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee925574a435eb2f0800000000000000
+      internalID: -955234492466517522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94bf2880f1874e50800000000000000
+      internalID: 6793541432988644507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_22
       rect:
         serializedVersion: 2
         x: 0
@@ -613,14 +718,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2cca442755db5950800000000000000
-      internalID: 6438974662504008749
+      spriteID: 198bb4aa3bf86ab90800000000000000
+      internalID: -7230934149877745519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_19
+      name: Reaver_23
       rect:
         serializedVersion: 2
         x: 64
@@ -634,14 +739,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5362698bb7dbb1420800000000000000
-      internalID: 2601881548812068405
+      spriteID: c70cd55b22dac2ca0800000000000000
+      internalID: -6040262635627364228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_20
+      name: Reaver_24
       rect:
         serializedVersion: 2
         x: 128
@@ -655,14 +760,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615ff5cea9d469020800000000000000
-      internalID: 2348149583506306326
+      spriteID: 14a09c7235b8c97d0800000000000000
+      internalID: -2910298069922149823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_21
+      name: Reaver_25
       rect:
         serializedVersion: 2
         x: 192
@@ -676,14 +781,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36aae2e955b5f0350800000000000000
-      internalID: 5985102853082884707
+      spriteID: 7a7acae1f3f029860800000000000000
+      internalID: 7535101890316248999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_22
+      name: Reaver_26
       rect:
         serializedVersion: 2
         x: 256
@@ -697,14 +802,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55813ef95674c0f40800000000000000
-      internalID: 5696006130516564053
+      spriteID: 4c41107896bb48430800000000000000
+      internalID: 3784355648809014468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_23
+      name: Reaver_27
       rect:
         serializedVersion: 2
         x: 320
@@ -718,14 +823,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ab2e8227bdfa8cb0800000000000000
-      internalID: -4860793884792443995
+      spriteID: 9c50a0776ab227af0800000000000000
+      internalID: -400209422920841783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_24
+      name: Reaver_28
       rect:
         serializedVersion: 2
         x: 384
@@ -739,14 +844,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49801cf6e6cd2bf10800000000000000
-      internalID: 2284130327909697684
+      spriteID: 1199486e62b563c10800000000000000
+      internalID: 2032912504438692113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_25
+      name: Reaver_29
       rect:
         serializedVersion: 2
         x: 448
@@ -760,14 +865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 492a407e72be8cb90800000000000000
-      internalID: -7221263445876497772
+      spriteID: 745dc53966eccabb0800000000000000
+      internalID: -4923333352668474041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_26
+      name: Reaver_30
       rect:
         serializedVersion: 2
         x: 512
@@ -781,14 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61850f9104fe11ef0800000000000000
-      internalID: -139067054879647722
+      spriteID: 66d79274bf122af40800000000000000
+      internalID: 5738186238337842534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_27
+      name: Reaver_31
       rect:
         serializedVersion: 2
         x: 576
@@ -802,14 +907,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89f4569e0a83abe70800000000000000
-      internalID: 9131673458208755608
+      spriteID: f48e2e686009858b0800000000000000
+      internalID: -5163218615073052593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_28
+      name: Reaver_32
       rect:
         serializedVersion: 2
         x: 0
@@ -823,14 +928,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcb58446e2d543310800000000000000
-      internalID: 1383833439341927371
+      spriteID: 5346aa984fc1e3a30800000000000000
+      internalID: 4196823739363124277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_29
+      name: Reaver_33
       rect:
         serializedVersion: 2
         x: 64
@@ -844,14 +949,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 047f76ff66b2fd5c0800000000000000
-      internalID: -4188581407059609792
+      spriteID: d072aff3095ffe790800000000000000
+      internalID: -7498504854651132147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_30
+      name: Reaver_34
       rect:
         serializedVersion: 2
         x: 128
@@ -865,14 +970,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82a0cc835b6b2e910800000000000000
-      internalID: 1865254085143038504
+      spriteID: de5e63cdc7f9f2e90800000000000000
+      internalID: -7048239533192190483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_31
+      name: Reaver_35
       rect:
         serializedVersion: 2
         x: 192
@@ -886,14 +991,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d543b31ea8cbe3d70800000000000000
-      internalID: 9024858007967315037
+      spriteID: 1aa500da42e1a8a80800000000000000
+      internalID: -8463919406819288415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_32
+      name: Reaver_36
       rect:
         serializedVersion: 2
         x: 256
@@ -907,14 +1012,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae75b9f8fb37a7b60800000000000000
-      internalID: 7744629775802259434
+      spriteID: 24698bfe6724ebb00800000000000000
+      internalID: 846186858587657794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_33
+      name: Reaver_37
       rect:
         serializedVersion: 2
         x: 320
@@ -928,14 +1033,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1669eb505d8babdc0800000000000000
-      internalID: -3622379725202221471
+      spriteID: ad8a16eebbd22d9a0800000000000000
+      internalID: -6209850651008980774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_34
+      name: Reaver_38
       rect:
         serializedVersion: 2
         x: 384
@@ -949,14 +1054,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d17394dd5dc1bf790800000000000000
-      internalID: -7495365449961883875
+      spriteID: 8862710d84e768bb0800000000000000
+      internalID: -4934117490543876472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_35
+      name: Reaver_39
       rect:
         serializedVersion: 2
         x: 448
@@ -970,14 +1075,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4326d070b1877720800000000000000
-      internalID: 2843884284515066703
+      spriteID: 217622ec1517e9880800000000000000
+      internalID: -8602313642066417902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_36
+      name: Reaver_40
       rect:
         serializedVersion: 2
         x: 512
@@ -991,14 +1096,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d23e884addac7d320800000000000000
-      internalID: 2582755964617286445
+      spriteID: 393c519f3295928c0800000000000000
+      internalID: -4023586781041146989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_37
+      name: Reaver_41
       rect:
         serializedVersion: 2
         x: 576
@@ -1012,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2557b4a890f2c2f20800000000000000
-      internalID: 3399143536779294034
+      spriteID: f778419ea6ade87f0800000000000000
+      internalID: -608308746936612993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_38
+      name: Reaver_42
       rect:
         serializedVersion: 2
         x: 640
@@ -1033,14 +1138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4c69c04442298ff0800000000000000
-      internalID: -33457845688505267
+      spriteID: bedd23faeab7beff0800000000000000
+      internalID: -5774984317051413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_39
+      name: Reaver_43
       rect:
         serializedVersion: 2
         x: 704
@@ -1054,14 +1159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d618e2fd0fc16220800000000000000
-      internalID: 2477488928847304404
+      spriteID: c378282d8f1ac31f0800000000000000
+      internalID: -1063797321910548676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_40
+      name: Reaver_44
       rect:
         serializedVersion: 2
         x: 768
@@ -1075,14 +1180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a95cf667d7cc56720800000000000000
-      internalID: 2838899979356980634
+      spriteID: 36c1c9715322854a0800000000000000
+      internalID: -6604491242114114461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eyeball_41
+      name: Reaver_45
       rect:
         serializedVersion: 2
         x: 832
@@ -1096,8 +1201,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f11433ab7ba14fbd0800000000000000
-      internalID: -2597421708680675041
+      spriteID: d0466c8f200cbf0f0800000000000000
+      internalID: -1082060166456253427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b43a8f06382d9c10800000000000000
+      internalID: 2061848417059615927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8fc76b2a0820a10800000000000000
+      internalID: 1874201831274248435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaver_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68ebcdc4586ad720800000000000000
+      internalID: 2871722425841346670
       vertices: []
       indices: 
       edges: []
@@ -1105,7 +1273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3695cf1d68d107548b3fd80e517ce71b
+    spriteID: 20f322c6b01d16742a98ae0ba55065a8
     internalID: 0
     vertices: []
     indices: 
@@ -1113,48 +1281,55 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Eyeball_0: -2792402802363126846
-      Eyeball_1: 112571745976006824
-      Eyeball_10: -5118414881637855136
-      Eyeball_11: 1343987463295443880
-      Eyeball_12: -5459812569046549345
-      Eyeball_13: 3192425259646650665
-      Eyeball_14: -1505946986294218185
-      Eyeball_15: 8094998680276224429
-      Eyeball_16: 8691396837579471808
-      Eyeball_17: -3585724762064130786
-      Eyeball_18: 6438974662504008749
-      Eyeball_19: 2601881548812068405
-      Eyeball_2: 4696390048660997592
-      Eyeball_20: 2348149583506306326
-      Eyeball_21: 5985102853082884707
-      Eyeball_22: 5696006130516564053
-      Eyeball_23: -4860793884792443995
-      Eyeball_24: 2284130327909697684
-      Eyeball_25: -7221263445876497772
-      Eyeball_26: -139067054879647722
-      Eyeball_27: 9131673458208755608
-      Eyeball_28: 1383833439341927371
-      Eyeball_29: -4188581407059609792
-      Eyeball_3: -7149191858110582771
-      Eyeball_30: 1865254085143038504
-      Eyeball_31: 9024858007967315037
-      Eyeball_32: 7744629775802259434
-      Eyeball_33: -3622379725202221471
-      Eyeball_34: -7495365449961883875
-      Eyeball_35: 2843884284515066703
-      Eyeball_36: 2582755964617286445
-      Eyeball_37: 3399143536779294034
-      Eyeball_38: -33457845688505267
-      Eyeball_39: 2477488928847304404
-      Eyeball_4: -4539880026570852370
-      Eyeball_40: 2838899979356980634
-      Eyeball_41: -2597421708680675041
-      Eyeball_5: -8802191901591396175
-      Eyeball_6: -7401047152809302156
-      Eyeball_7: -3755351595799010515
-      Eyeball_8: -6532215143079718499
-      Eyeball_9: -4898622871031195346
+      Reaver_0: 768489970394718587
+      Reaver_1: 9161280034866931038
+      Reaver_10: -482327133119346855
+      Reaver_11: -4755203348933068168
+      Reaver_12: -1447216697555157954
+      Reaver_13: 2270544750729225160
+      Reaver_14: 1656805635504729469
+      Reaver_15: -6816568951904055431
+      Reaver_16: 6944804870217544705
+      Reaver_17: 3104463202105812821
+      Reaver_18: -423010730489537750
+      Reaver_19: 407310975662466109
+      Reaver_2: -8976910749224536758
+      Reaver_20: -955234492466517522
+      Reaver_21: 6793541432988644507
+      Reaver_22: -7230934149877745519
+      Reaver_23: -6040262635627364228
+      Reaver_24: -2910298069922149823
+      Reaver_25: 7535101890316248999
+      Reaver_26: 3784355648809014468
+      Reaver_27: -400209422920841783
+      Reaver_28: 2032912504438692113
+      Reaver_29: -4923333352668474041
+      Reaver_3: 406812350877857481
+      Reaver_30: 5738186238337842534
+      Reaver_31: -5163218615073052593
+      Reaver_32: 4196823739363124277
+      Reaver_33: -7498504854651132147
+      Reaver_34: -7048239533192190483
+      Reaver_35: -8463919406819288415
+      Reaver_36: 846186858587657794
+      Reaver_37: -6209850651008980774
+      Reaver_38: -4934117490543876472
+      Reaver_39: -8602313642066417902
+      Reaver_4: -1830147713947307596
+      Reaver_40: -4023586781041146989
+      Reaver_41: -608308746936612993
+      Reaver_42: -5774984317051413
+      Reaver_43: -1063797321910548676
+      Reaver_44: -6604491242114114461
+      Reaver_45: -1082060166456253427
+      Reaver_46: 2061848417059615927
+      Reaver_47: 1874201831274248435
+      Reaver_48: 2871722425841346670
+      Reaver_5: -9041936588555404483
+      Reaver_6: -8400611395018098674
+      Reaver_7: 8664794877152693997
+      Reaver_8: -1050057034731732562
+      Reaver_9: 6328014704832858036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

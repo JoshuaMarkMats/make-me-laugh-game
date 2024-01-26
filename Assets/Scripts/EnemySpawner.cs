@@ -68,6 +68,13 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(SpawnEnemies());
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        //spawn area
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere((Vector2)transform.position, spawnDistance);
+    }
+
     private IEnumerator SpawnEnemies()
     {
         WaitForSeconds Wait = new(SpawnDelay);
@@ -88,7 +95,7 @@ public class EnemySpawner : MonoBehaviour
                 yield return IntervalWait;
             }
 
-            int rangedToSpawn = currentWave; // x/3
+            int rangedToSpawn = currentWave/2; // x/2
             int spawnedRanged = 0;
 
             while (rangedAlive < rangedEnemyCap && spawnedRanged < rangedToSpawn)

@@ -120,7 +120,7 @@ public class Enemy : PoolableObject, IDamageable
 
     public void ChangeHealth(int value)
     {
-        //Debug.Log($"changing enemy health by {value}");
+        //Debug.Log($"changing {gameObject.name} health by {value}");
 
         if (!isAlive)
             return;
@@ -141,11 +141,12 @@ public class Enemy : PoolableObject, IDamageable
     protected virtual void EnemyDeath()
     {
         //AudioManager.Instance.Play(deathSound);
+        //Debug.Log($"{gameObject.name} dies");
         
         isAlive = false;
         animator.SetTrigger("death");
-        if (flashCoroutine != null)
-            StopCoroutine(flashCoroutine);
+        /*if (flashCoroutine != null)
+            StopCoroutine(flashCoroutine);*/
         spriteRenderer.material = baseMaterial;
     }
 
