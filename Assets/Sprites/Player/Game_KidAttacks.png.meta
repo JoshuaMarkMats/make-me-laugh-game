@@ -1,0 +1,1231 @@
+fileFormatVersion: 2
+guid: da5aadf060296ad49a620136e726befe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9183873212904850588
+    second: Game_KidAttacks_0
+  - first:
+      213: -5074330095320056455
+    second: Game_KidAttacks_1
+  - first:
+      213: 2441900682475121590
+    second: Game_KidAttacks_2
+  - first:
+      213: -1846483339260254079
+    second: Game_KidAttacks_3
+  - first:
+      213: -3700142604031860788
+    second: Game_KidAttacks_4
+  - first:
+      213: 2341241338821353967
+    second: Game_KidAttacks_5
+  - first:
+      213: -3553295418583871024
+    second: Game_KidAttacks_6
+  - first:
+      213: -7637779474908968972
+    second: Game_KidAttacks_7
+  - first:
+      213: -2299539341272762401
+    second: Game_KidAttacks_8
+  - first:
+      213: 7253300024182343998
+    second: Game_KidAttacks_9
+  - first:
+      213: -5904266366384784508
+    second: Game_KidAttacks_10
+  - first:
+      213: -4399033654336054978
+    second: Game_KidAttacks_11
+  - first:
+      213: -5277547001188483484
+    second: Game_KidAttacks_12
+  - first:
+      213: -5885961310253898952
+    second: Game_KidAttacks_13
+  - first:
+      213: -4623766144201172967
+    second: Game_KidAttacks_14
+  - first:
+      213: 7957638967210354169
+    second: Game_KidAttacks_15
+  - first:
+      213: 1075239280601062015
+    second: Game_KidAttacks_16
+  - first:
+      213: -3920334579865092382
+    second: Game_KidAttacks_17
+  - first:
+      213: -4155691248932416095
+    second: Game_KidAttacks_18
+  - first:
+      213: -2680246152554835008
+    second: Game_KidAttacks_19
+  - first:
+      213: -4751092041101720196
+    second: Game_KidAttacks_20
+  - first:
+      213: -1473974606483054055
+    second: Game_KidAttacks_21
+  - first:
+      213: 4379303324477846521
+    second: Game_KidAttacks_22
+  - first:
+      213: 6829741460353477957
+    second: Game_KidAttacks_23
+  - first:
+      213: 913846636910293973
+    second: Game_KidAttacks_24
+  - first:
+      213: 6450940305438219429
+    second: Game_KidAttacks_25
+  - first:
+      213: -7513504276051758524
+    second: Game_KidAttacks_26
+  - first:
+      213: -6573270800218578665
+    second: Game_KidAttacks_27
+  - first:
+      213: -1255428015303557416
+    second: Game_KidAttacks_28
+  - first:
+      213: 3628971576742809293
+    second: Game_KidAttacks_29
+  - first:
+      213: -6045435947026474622
+    second: Game_KidAttacks_30
+  - first:
+      213: 6839104904942009603
+    second: Game_KidAttacks_31
+  - first:
+      213: 71326492602655655
+    second: Game_KidAttacks_32
+  - first:
+      213: -1215073986890217329
+    second: Game_KidAttacks_33
+  - first:
+      213: 7373813826694952195
+    second: Game_KidAttacks_34
+  - first:
+      213: 7009831061166265307
+    second: Game_KidAttacks_35
+  - first:
+      213: 7881047158989480536
+    second: Game_KidAttacks_36
+  - first:
+      213: 1578623717844809989
+    second: Game_KidAttacks_37
+  - first:
+      213: 8296608880487005501
+    second: Game_KidAttacks_38
+  - first:
+      213: 977402201382246725
+    second: Game_KidAttacks_39
+  - first:
+      213: -8184757161974482346
+    second: Game_KidAttacks_40
+  - first:
+      213: 6722555330984387866
+    second: Game_KidAttacks_41
+  - first:
+      213: -4458871189968119914
+    second: Game_KidAttacks_42
+  - first:
+      213: -151239942901488226
+    second: Game_KidAttacks_43
+  - first:
+      213: 8333912403076744516
+    second: Game_KidAttacks_44
+  - first:
+      213: -9017702982073639687
+    second: Game_KidAttacks_45
+  - first:
+      213: -8808178536397455033
+    second: Game_KidAttacks_46
+  - first:
+      213: -4970682842689674465
+    second: Game_KidAttacks_47
+  - first:
+      213: 8547198665522079723
+    second: Game_KidAttacks_48
+  - first:
+      213: 6259256401322113945
+    second: Game_KidAttacks_49
+  - first:
+      213: 3998678339051848309
+    second: Game_KidAttacks_50
+  - first:
+      213: -6681077344616816048
+    second: Game_KidAttacks_51
+  - first:
+      213: -8774750153937574383
+    second: Game_KidAttacks_52
+  - first:
+      213: -9142171994277645214
+    second: Game_KidAttacks_53
+  - first:
+      213: 6216403196621310227
+    second: Game_KidAttacks_54
+  - first:
+      213: -5911938159201328365
+    second: Game_KidAttacks_55
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game_KidAttacks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bb49a98f35c8080800000000000000
+      internalID: -9183873212904850588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dbf5bc9ab5499b0800000000000000
+      internalID: -5074330095320056455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bba6b3abbf53e120800000000000000
+      internalID: 2441900682475121590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18827bf9f29ff56e0800000000000000
+      internalID: -1846483339260254079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf5464e7e376acc0800000000000000
+      internalID: -3700142604031860788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe128edd792cd7020800000000000000
+      internalID: 2341241338821353967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1194994a820bec0800000000000000
+      internalID: -3553295418583871024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f70845c808210690800000000000000
+      internalID: -7637779474908968972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7b66017256610e0800000000000000
+      internalID: -2299539341272762401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3988be31f5e8a460800000000000000
+      internalID: 7253300024182343998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b395c9505df0ea0800000000000000
+      internalID: -5904266366384784508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e399f4ec23e73f2c0800000000000000
+      internalID: -4399033654336054978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e7bbcc6f262c6b0800000000000000
+      internalID: -5277547001188483484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_13
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833af9c9f5dd05ea0800000000000000
+      internalID: -5885961310253898952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_14
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918596a803515dfb0800000000000000
+      internalID: -4623766144201172967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_15
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 560
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f52163ba763f6e60800000000000000
+      internalID: 7957638967210354169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ad5c8cd640cee00800000000000000
+      internalID: 1075239280601062015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eef57e687c2899c0800000000000000
+      internalID: -3920334579865092382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a51f2fa3d40456c0800000000000000
+      internalID: -4155691248932416095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c39c56235addcad0800000000000000
+      internalID: -2680246152554835008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7542f206fab01eb0800000000000000
+      internalID: -4751092041101720196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3393caca2aeac00800000000000000
+      internalID: 913846636910293973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac15ec7708568950800000000000000
+      internalID: 6450940305438219429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_26
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4427e8f4babaab790800000000000000
+      internalID: -7513504276051758524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_27
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711268ca80d07c4a0800000000000000
+      internalID: -6573270800218578665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_28
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8def1c22fd2d39ee0800000000000000
+      internalID: -1255428015303557416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_29
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 355
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce8eb30c62bc5230800000000000000
+      internalID: 3628971576742809293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3e7ae21176df000800000000000000
+      internalID: 71326492602655655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88479b85a0332fe0800000000000000
+      internalID: -1215073986890217329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30534047b9c055660800000000000000
+      internalID: 7373813826694952195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd39050e53ce74160800000000000000
+      internalID: 7009831061166265307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8526ba1b2aa1f5d60800000000000000
+      internalID: 7881047158989480536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509752058e568e510800000000000000
+      internalID: 1578623717844809989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d77c9c1d9732370800000000000000
+      internalID: 8296608880487005501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_39
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f170ed3d7e5bda4d9274df5e677c196
+      internalID: -1093475619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83129e8988b23e44aa5086441294f129
+      internalID: 183624787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67abc7211ae83844a8e13ec8906d4e47
+      internalID: -1097550452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_42
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9985a4328b89045a3c5d80982d4cbc
+      internalID: -1626477408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_43
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ed27c06e4bab442b66d311099f485a
+      internalID: -499320932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_44
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af3b35ecef596547b0463e0312607c3
+      internalID: -768268090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_45
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3141bfc32da6a428559b0cc317e2d5
+      internalID: 553220963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_46
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ba86857dde2c74296920a32ef0b8f9
+      internalID: 2016496096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_KidAttacks_47
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 98
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299579a940d6bd74a823824c6fcdbbc5
+      internalID: -1663898214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c6bdfe89ff5f0c3468fce78f7eef8958
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game_KidAttacks_0: -9183873212904850588
+      Game_KidAttacks_1: -5074330095320056455
+      Game_KidAttacks_10: -5904266366384784508
+      Game_KidAttacks_11: -4399033654336054978
+      Game_KidAttacks_12: -5277547001188483484
+      Game_KidAttacks_13: -5885961310253898952
+      Game_KidAttacks_14: -4623766144201172967
+      Game_KidAttacks_15: 7957638967210354169
+      Game_KidAttacks_16: 1075239280601062015
+      Game_KidAttacks_17: -3920334579865092382
+      Game_KidAttacks_18: -4155691248932416095
+      Game_KidAttacks_19: -2680246152554835008
+      Game_KidAttacks_2: 2441900682475121590
+      Game_KidAttacks_20: -4751092041101720196
+      Game_KidAttacks_21: -1473974606483054055
+      Game_KidAttacks_22: 4379303324477846521
+      Game_KidAttacks_23: 6829741460353477957
+      Game_KidAttacks_24: 913846636910293973
+      Game_KidAttacks_25: 6450940305438219429
+      Game_KidAttacks_26: -7513504276051758524
+      Game_KidAttacks_27: -6573270800218578665
+      Game_KidAttacks_28: -1255428015303557416
+      Game_KidAttacks_29: 3628971576742809293
+      Game_KidAttacks_3: -1846483339260254079
+      Game_KidAttacks_30: -6045435947026474622
+      Game_KidAttacks_31: 6839104904942009603
+      Game_KidAttacks_32: 71326492602655655
+      Game_KidAttacks_33: -1215073986890217329
+      Game_KidAttacks_34: 7373813826694952195
+      Game_KidAttacks_35: 7009831061166265307
+      Game_KidAttacks_36: 7881047158989480536
+      Game_KidAttacks_37: 1578623717844809989
+      Game_KidAttacks_38: 8296608880487005501
+      Game_KidAttacks_39: -1093475619
+      Game_KidAttacks_4: -3700142604031860788
+      Game_KidAttacks_40: 183624787
+      Game_KidAttacks_41: -1097550452
+      Game_KidAttacks_42: -1626477408
+      Game_KidAttacks_43: -499320932
+      Game_KidAttacks_44: -768268090
+      Game_KidAttacks_45: 553220963
+      Game_KidAttacks_46: 2016496096
+      Game_KidAttacks_47: -1663898214
+      Game_KidAttacks_5: 2341241338821353967
+      Game_KidAttacks_6: -3553295418583871024
+      Game_KidAttacks_7: -7637779474908968972
+      Game_KidAttacks_8: -2299539341272762401
+      Game_KidAttacks_9: 7253300024182343998
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

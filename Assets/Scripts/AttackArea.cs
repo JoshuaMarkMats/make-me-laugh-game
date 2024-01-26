@@ -6,6 +6,8 @@ public class AttackArea : MonoBehaviour
 {
     private Collider2D areaCollider;
     private List<Collider2D> hitTargets = new();
+    [SerializeField]
+    private Animator attackEffect;
 
     private void Awake()
     {
@@ -15,6 +17,9 @@ public class AttackArea : MonoBehaviour
     public void Attack(int damage)
     {
         areaCollider.Overlap(hitTargets);
+
+        if (attackEffect != null) 
+            attackEffect.SetTrigger("attack");
 
         foreach (Collider2D target in hitTargets)
         {
