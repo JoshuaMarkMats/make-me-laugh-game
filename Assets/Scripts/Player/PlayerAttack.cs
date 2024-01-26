@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
     [Space()]
 
     [SerializeField]
-    private float currentStamina;
+    private float currentStamina = 50;
     [SerializeField]
     private float maxStamina = 50;
     [SerializeField]
@@ -83,8 +83,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
+        staminaBar.SetValue(currentStamina);
     }
 
     void Update()
@@ -94,7 +94,7 @@ public class PlayerAttack : MonoBehaviour
 
         ManageTimers();
 
-        Debug.Log($"Giggle: {(giggleCooldown - giggleCurrentCooldown > 0 ? giggleCooldown - giggleCurrentCooldown : "Ready")} | Laugh: {(laughCooldown - laughCurrentCooldown > 0 ? laughCooldown - laughCurrentCooldown : "Ready")} | Boisterous Laugh: {(boisterousLaughCooldown - boisterousLaughCurrentCooldown > 0 ? boisterousLaughCooldown - boisterousLaughCurrentCooldown : "Ready")}");
+        //Debug.Log($"Giggle: {(giggleCooldown - giggleCurrentCooldown > 0 ? giggleCooldown - giggleCurrentCooldown : "Ready")} | Laugh: {(laughCooldown - laughCurrentCooldown > 0 ? laughCooldown - laughCurrentCooldown : "Ready")} | Boisterous Laugh: {(boisterousLaughCooldown - boisterousLaughCurrentCooldown > 0 ? boisterousLaughCooldown - boisterousLaughCurrentCooldown : "Ready")}");
     }
 
     void ManageTimers()
