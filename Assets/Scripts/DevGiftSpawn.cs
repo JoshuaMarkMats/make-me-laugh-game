@@ -7,17 +7,14 @@ public class DevGiftSpawn : MonoBehaviour
     [SerializeField]
     private bool spawnGift = false;
     [SerializeField]
-    private GiftType giftType;
-    [SerializeField]
-    private Gift giftObject;
+    private GameObject giftObject;
 
     void Update()
     {
         if (spawnGift)
         {
             spawnGift = false;
-            Gift newGift = Instantiate(giftObject, transform.position, transform.rotation);
-            newGift.GiftType = giftType;
+            Instantiate(giftObject, transform.position, transform.rotation);
         }
     }
 }

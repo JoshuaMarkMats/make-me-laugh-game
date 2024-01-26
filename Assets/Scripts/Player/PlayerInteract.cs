@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]
+    private GiftSlot giftSlot;
+
+    [SerializeField]
     private float interactRange = 2f;
     [SerializeField]
     private Vector2 interactOffset = Vector2.up;
@@ -38,8 +41,12 @@ public class PlayerInteract : MonoBehaviour
         if (collider == null)
             return;
 
-        IInteractable interactable = collider.GetComponent<IInteractable>();
-        if (interactable != null)
-            interactable.OnInteract();
+        Gift gift = collider.GetComponent<Gift>();
+        if (gift != null)
+        {
+            if (giftSlot.AddGift(gift.GiftType))
+                Destroy(collider.gameObject);
+        }
+            
     }
 }

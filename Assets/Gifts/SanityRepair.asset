@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834cbaea00e6a4a4ba545b99a80cdc1b, type: 3}
   m_Name: SanityRepair
   m_EditorClassIdentifier: 
-  PickupName: SanityRepair
-  PickupDescription: 
-  PickupIcon: {fileID: 1311752102108684794, guid: 4b69534a7eb2050468e73ee63da5228a, type: 3}
-  SanityRecovery: 0
+  GiftName: Sanity Repair
+  GiftIcon: {fileID: 1311752102108684794, guid: 4b69534a7eb2050468e73ee63da5228a, type: 3}

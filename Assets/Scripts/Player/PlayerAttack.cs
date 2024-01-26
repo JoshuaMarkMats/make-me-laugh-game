@@ -94,7 +94,7 @@ public class PlayerAttack : MonoBehaviour
 
         ManageTimers();
 
-        Debug.Log($"Giggle: {(giggleCooldown - giggleCurrentCooldown > 0 ? giggleCooldown - giggleCurrentCooldown : "Ready")} | Laugh: {(laughCooldown - laughCurrentCooldown > 0 ? laughCooldown - laughCurrentCooldown : "Ready")} | Boisterous Laugh: {(boisterousLaughCooldown - boisterousLaughCurrentCooldown > 0 ? boisterousLaughCooldown - boisterousLaughCurrentCooldown : "Ready")}");
+        //Debug.Log($"Giggle: {(giggleCooldown - giggleCurrentCooldown > 0 ? giggleCooldown - giggleCurrentCooldown : "Ready")} | Laugh: {(laughCooldown - laughCurrentCooldown > 0 ? laughCooldown - laughCurrentCooldown : "Ready")} | Boisterous Laugh: {(boisterousLaughCooldown - boisterousLaughCurrentCooldown > 0 ? boisterousLaughCooldown - boisterousLaughCurrentCooldown : "Ready")}");
     }
 
     void ManageTimers()
