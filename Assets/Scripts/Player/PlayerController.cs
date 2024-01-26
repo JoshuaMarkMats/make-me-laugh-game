@@ -10,14 +10,15 @@ public class PlayerController : MonoBehaviour, IDamageable
     private int currentSanity = 30;
     public int maxSanity = 100;
     [SerializeField]
+    private int SanityRestoreOnBossKill = 5;
+    [SerializeField]
     private ResourceBar sanityBar;
     [Space()]
     private bool isSane = true;
 
     public float moveSpeed = 1f;
     private Vector2 moveDirection = Vector2.zero;
-    private Rigidbody2D playerRigidbody;
-   
+    private Rigidbody2D playerRigidbody;  
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         sanityBar.SetMaxValue(maxSanity);
         sanityBar.SetValue(currentSanity);
+
+        LevelScript.bossKillEvent.AddListener(BossKillHeal);
     }
 
     // Update is called once per frame
@@ -41,6 +44,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         moveDirection = inputValue.Get<Vector2>().normalized;
         
+    }
+
+    private void BossKillHeal()
+    {
+        ChangeHealth(SanityRestoreOnBossKill);
     }
 
     public void ChangeHealth(int value)
@@ -74,6 +82,6 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void GameOver()
     {
-
+        LevelScript.bossKillEvent.RemoveAllListeners();
     }
 }

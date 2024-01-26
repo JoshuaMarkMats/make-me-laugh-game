@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour, IDamageable
         baseMaterial = spriteRenderer.material;
     }
 
-    protected virtual void Update()
+    private void Update()
     {
         //if not dead, do sprite movement change
         if (isAlive)
@@ -105,7 +105,7 @@ public class Enemy : MonoBehaviour, IDamageable
             Move();
     }
 
-    protected virtual void Move()
+    private void Move()
     {
         Vector2 position = (Vector2)transform.position + (baseSpeed * moveDirection);
         enemyRigidbody.MovePosition(position);
@@ -131,7 +131,7 @@ public class Enemy : MonoBehaviour, IDamageable
             EnemyDeath();
     }
 
-    private void EnemyDeath()
+    protected virtual void EnemyDeath()
     {
         //AudioManager.Instance.Play(deathSound);
         //enemyDeathEvent.Invoke();
