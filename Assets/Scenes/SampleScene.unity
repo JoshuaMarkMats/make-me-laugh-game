@@ -2451,6 +2451,7 @@ MonoBehaviour:
   deathDuration: 1
   baseSpeed: 0.1
   isMovementPaused: 0
+  target: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: e2585d75c0073d540ae87b70a8c6d418, type: 2}
   flashDuration: 0.1
 --- !u!1 &1833361292
@@ -3095,7 +3096,7 @@ GameObject:
   - component: {fileID: 1664016422018867514}
   - component: {fileID: 5434171981457261441}
   - component: {fileID: 191118443847931847}
-  - component: {fileID: 6279462416321285378}
+  - component: {fileID: 8706599517845942716}
   - component: {fileID: 8706599517845942715}
   m_Layer: 6
   m_Name: thebaker
@@ -3103,7 +3104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &5434171981457261441
 Rigidbody2D:
   serializedVersion: 4
@@ -3131,26 +3132,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6279462416321285378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4351031167896630102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07fbd86d75c544f4381e09c184883f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
-  deathDuration: 5
-  baseSpeed: 0.03
-  isMovementPaused: 0
-  flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}
-  flashDuration: 0.1
-  target: {fileID: 1444135702}
 --- !u!212 &7204427990995691539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3220,6 +3201,26 @@ MonoBehaviour:
   attackSound: 
   attackArea: {fileID: 837055685}
   pivotParent: {fileID: 163496347}
+--- !u!114 &8706599517845942716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351031167896630102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f1c16a9d7343748a37333305f9eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 10
+  deathDuration: 5
+  baseSpeed: 0.03
+  isMovementPaused: 0
+  target: {fileID: 1444135702}
+  flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}
+  flashDuration: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

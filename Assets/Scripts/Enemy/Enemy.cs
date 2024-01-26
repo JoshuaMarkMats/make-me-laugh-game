@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class EnemyBase : MonoBehaviour, IDamageable
+public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private int maxHealth = 10;
@@ -23,6 +23,12 @@ public class EnemyBase : MonoBehaviour, IDamageable
     [SerializeField]
     private bool isMovementPaused = false; //enemy movement paused (saves lookX)
     protected Vector2 moveDirection = Vector2.zero; //direction of movement, also used for determining sprite direction for overrides
+
+    //chasing
+    [Space()]
+    public Transform target;
+    private Vector2 vectorToTarget;
+    public Vector2 VectorToTarget { get { return vectorToTarget; } }
 
     /* Enemy Hit */
     [Space()]
@@ -70,6 +76,15 @@ public class EnemyBase : MonoBehaviour, IDamageable
             else
                 animator.SetBool("isMoving", false);
         }
+
+        if (target != null)
+        {
+            //update pathfinding
+            vectorToTarget = target.position - transform.position;
+            moveDirection = vectorToTarget.normalized;
+        }
+        else
+            moveDirection = Vector2.zero;
     }
 
     private void LateUpdate()

@@ -4,7 +4,7 @@ using System.Net.Mail;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MeleeAttack : MonoBehaviour
+public class BossAttack : MonoBehaviour
 {
     /* Attack */
     [SerializeField]
