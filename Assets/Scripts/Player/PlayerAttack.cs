@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -31,9 +33,13 @@ public class PlayerAttack : MonoBehaviour
     private float giggleCooldown = 0.5f;
     [SerializeField]
     private AttackArea giggleAttackArea;
-    private float giggleCurrentCooldown = 0;
+    private float giggleCurrentCooldown;
     [SerializeField]
     private float giggleStaminaCost = 2;
+    [SerializeField]
+    private Slider giggleCooldownSlider;
+    [SerializeField]
+    private TextMeshProUGUI giggleCooldownText;
     [Space()]
     [SerializeField]
     private int laughDamage = 4;
@@ -41,9 +47,13 @@ public class PlayerAttack : MonoBehaviour
     private float laughCooldown = 3f;
     [SerializeField]
     private AttackArea laughAttackArea;
-    private float laughCurrentCooldown = 0;
+    private float laughCurrentCooldown;
     [SerializeField]
     private float laughStaminaCost = 10;
+    [SerializeField]
+    private Slider laughCooldownSlider;
+    [SerializeField]
+    private TextMeshProUGUI laughCooldownText;
     [Space()]
     [SerializeField]
     private int boisterousLaughDamage = 5;
@@ -51,9 +61,13 @@ public class PlayerAttack : MonoBehaviour
     private float boisterousLaughCooldown = 7.5f;
     [SerializeField]
     private AttackArea boisterousLaughAttackArea;
-    private float boisterousLaughCurrentCooldown = 0;
+    private float boisterousLaughCurrentCooldown;
     [SerializeField]
     private float boisterousLaughStaminaCost = 25;
+    [SerializeField]
+    private Slider boisterousLaughCooldownSlider;
+    [SerializeField]
+    private TextMeshProUGUI boisterousLaughCooldownText;
 
     [Space()]
 
@@ -85,6 +99,14 @@ public class PlayerAttack : MonoBehaviour
     {
         staminaBar.SetMaxValue(maxStamina);
         staminaBar.SetValue(currentStamina);
+
+        giggleCurrentCooldown = giggleCooldown;
+        laughCurrentCooldown = laughCooldown;
+        boisterousLaughCurrentCooldown = boisterousLaughCooldown;
+
+        giggleCooldownSlider.maxValue = giggleCooldown;
+        laughCooldownSlider.maxValue = laughCooldown;
+        boisterousLaughCooldownSlider.maxValue = boisterousLaughCooldown;
     }
 
     void Update()
@@ -93,8 +115,6 @@ public class PlayerAttack : MonoBehaviour
         pivotParent.transform.eulerAngles = new Vector3(0, 0, aimAngle);
 
         ManageTimers();
-
-        //Debug.Log($"Giggle: {(giggleCooldown - giggleCurrentCooldown > 0 ? giggleCooldown - giggleCurrentCooldown : "Ready")} | Laugh: {(laughCooldown - laughCurrentCooldown > 0 ? laughCooldown - laughCurrentCooldown : "Ready")} | Boisterous Laugh: {(boisterousLaughCooldown - boisterousLaughCurrentCooldown > 0 ? boisterousLaughCooldown - boisterousLaughCurrentCooldown : "Ready")}");
     }
 
     void ManageTimers()
@@ -106,42 +126,59 @@ public class PlayerAttack : MonoBehaviour
         }
 
 
-        if (giggleCurrentCooldown < giggleCooldown)
-            giggleCurrentCooldown += Time.deltaTime;
-        if (laughCurrentCooldown < laughCooldown)
-            laughCurrentCooldown += Time.deltaTime;
-        if (boisterousLaughCurrentCooldown < boisterousLaughCooldown)
-            boisterousLaughCurrentCooldown += Time.deltaTime;
+        if (giggleCurrentCooldown > 0)
+        {
+            giggleCurrentCooldown -= Time.deltaTime;
+            //update slider
+            giggleCooldownSlider.value = giggleCurrentCooldown;
+            //after adding, check if we should still display cooldown text
+            giggleCooldownText.text = (giggleCurrentCooldown > 0) ? $"{(int)giggleCurrentCooldown}s" : "";
+        }
+            
+        if (laughCurrentCooldown > 0)
+        {
+            laughCurrentCooldown -= Time.deltaTime;
+            laughCooldownSlider.value = laughCurrentCooldown;
+            laughCooldownText.text = (laughCurrentCooldown > 0) ? $"{(int)laughCurrentCooldown}s" : "";
+        }
+            
+        if (boisterousLaughCurrentCooldown > 0)
+        {
+            boisterousLaughCurrentCooldown -= Time.deltaTime;
+            boisterousLaughCooldownSlider.value = boisterousLaughCurrentCooldown;
+            boisterousLaughCooldownText.text = (boisterousLaughCurrentCooldown > 0) ? $"{(int)boisterousLaughCurrentCooldown}s" : "";
+        }
+           
     }
 
     void OnGiggle()
     {
-        if (giggleCurrentCooldown < giggleCooldown || currentStamina < giggleStaminaCost)
+        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost)
             return;
         giggleAttackArea.Attack(giggleDamage);
-        giggleCurrentCooldown = 0;
+        giggleCurrentCooldown = giggleCooldown;
         
         currentStamina -= giggleStaminaCost;
     }
 
     void OnLaugh()
     {
-        if (laughCurrentCooldown < laughCooldown || currentStamina < laughStaminaCost)
+        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost)
             return;
         
         laughAttackArea.Attack(laughDamage);
-        laughCurrentCooldown = 0;
+        laughCurrentCooldown = laughCooldown;
 
         currentStamina -= laughStaminaCost;
     }
 
     void OnBoisterousLaugh()
     {
-        if (boisterousLaughCurrentCooldown < boisterousLaughCooldown || currentStamina < boisterousLaughStaminaCost)
+        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost)
             return;
 
         boisterousLaughAttackArea.Attack(boisterousLaughDamage);
-        boisterousLaughCurrentCooldown = 0;
+        boisterousLaughCurrentCooldown = boisterousLaughCooldown;
 
         currentStamina -= boisterousLaughStaminaCost;
     }
