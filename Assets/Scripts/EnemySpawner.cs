@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class EnemySpawner : MonoBehaviour
 {
     private ObjectPool meleePool;
+    [SerializeField]
     private PoolableObject meleeEnemy;
     public int meleeEnemyCap = 40;
     private int meleeAlive = 0;
@@ -17,10 +18,16 @@ public class EnemySpawner : MonoBehaviour
     private PoolableObject bossEnemy;
     public int bossEnemyCap = 20;
     [Space()]
-    public float SpawnDelay = 5f;
-    private float SpawnMaxDelay = 15f;
-    private float SpawnDelayIncrease = 0.1f;
+    [SerializeField]
+    private float SpawnDelay = 10f;
+    [SerializeField]
+    private float SpawnMaxDelay = 25f;
+    [SerializeField]
+    private float SpawnDelayIncrease = 0.5f;
+    [SerializeField]
+    private float SpawnInterval = 0.1f; //time delay between individual spawns
     [Space()]
+    [SerializeField]
     private float spawnDistance = 5f;
     private int currentWave = 1;
 
@@ -33,8 +40,8 @@ public class EnemySpawner : MonoBehaviour
 
     public void Awake()
     {
-        ObjectPool.CreateInstance(meleeEnemy, meleeEnemyCap);
-        ObjectPool.CreateInstance(bossEnemy, bossEnemyCap);
+        meleePool = ObjectPool.CreateInstance(meleeEnemy, meleeEnemyCap);
+        //ObjectPool.CreateInstance(bossEnemy, bossEnemyCap);
     }
     void Start()
     {
@@ -44,20 +51,30 @@ public class EnemySpawner : MonoBehaviour
     private IEnumerator SpawnEnemies()
     {
         WaitForSeconds Wait = new(SpawnDelay);
+        WaitForSeconds IntervalWait = new(SpawnInterval);
 
-        int meleeToSpawn = currentWave * 2 - 1; //2x-1
-        int spawnedMelee = 0;
-
-        while (meleeAlive < meleeEnemyCap && spawnedMelee < meleeToSpawn)
+        while (true)
         {
-            DoSpawnMelee();
+            int meleeToSpawn = currentWave; //2x-1
+            int spawnedMelee = 0;
 
-            spawnedMelee++;
+            Debug.Log($"Trying to spawn {meleeToSpawn} melee");
+            while (meleeAlive < meleeEnemyCap && spawnedMelee < meleeToSpawn)
+            {
+                DoSpawnMelee();
 
-            
+                spawnedMelee++;
+
+                yield return IntervalWait;
+            }
+
+            yield return Wait;
+            currentWave++;
+
+            if (SpawnDelay < SpawnMaxDelay)
+                SpawnDelay += SpawnDelayIncrease;
         }
-
-        yield return Wait;
+        
     }
 
     private void DoSpawnMelee()
@@ -72,6 +89,10 @@ public class EnemySpawner : MonoBehaviour
         Enemy enemy = poolableObject.GetComponent<Enemy>();
 
         enemy.target = player;
+        enemy.IsAlive = true;
+        enemy.IsMovementPaused = false;
+        //enemy.currentHealth = enemy.maxHealth;
+        //enemy.health
         enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
         enemy.enemyDeathEvent.AddListener(ReduceMeleeCount);
         enemy.gameObject.SetActive(true);

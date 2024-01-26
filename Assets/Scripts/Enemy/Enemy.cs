@@ -39,6 +39,7 @@ public class Enemy : PoolableObject, IDamageable
     private float flashDuration = 0.1f;
     private Coroutine flashCoroutine;
 
+    [SerializeField]
     private bool isAlive = true;
     private Animator animator;
     private float lookDirection = 1;
@@ -56,6 +57,12 @@ public class Enemy : PoolableObject, IDamageable
         }
     }
     public bool IsMovementPaused { get { return isMovementPaused; } set { isMovementPaused = value; } }
+
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+        isAlive = true;
+    }
 
     void Start()
     {
