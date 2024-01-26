@@ -2,21 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour, IDamageable
 {
     /* Base Stats */
+    public float moveSpeed = 1f;
     [SerializeField]
     private int currentSanity = 30;
     public int maxSanity = 100;
     [SerializeField]
     private int SanityRestoreOnBossKill = 5;
     [SerializeField]
-    private ResourceBar sanityBar;
+    private ResourceBar sanityBar;   
+    private bool isSane = true;   
+    [SerializeField]
+    private Image sanityIcon;
     [Space()]
-    private bool isSane = true;
 
-    public float moveSpeed = 1f;
+    [SerializeField]
+    private Sprite veryLowSanityImage;
+    [SerializeField]
+    private Sprite lowSanityImage;
+    [SerializeField]
+    private Sprite mediumSanityImage;
+    [SerializeField]
+    private Sprite highSanityImage;
+    [SerializeField]
+    private Sprite veryHighSanityImage;
+    
     private Vector2 moveDirection = Vector2.zero;
     private Rigidbody2D playerRigidbody;  
 
@@ -53,30 +67,32 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void ChangeHealth(int value)
     {
-
         if (!isSane)
             return;
-
-        /*if (value < 0)
-        {
-            if (isInvincible)
-            {
-                Debug.Log("Invincible");
-                return;
-            }
-
-
-            isInvincible = true;
-            invincibleTimer = timeInvincible;
-            PlayerHurt();
-            invincibleBlinkCoroutine = StartCoroutine(InvincibleBlink(invincibleBlinkInterval));
-        }*/
 
         currentSanity = Mathf.Clamp(currentSanity + value, 0, maxSanity);
         sanityBar.SetValue(currentSanity);
 
+        UpdateSanityIcon();
+
         if (currentSanity <= 0)
            GameOver();
+
+    }
+
+    private void UpdateSanityIcon()
+    {
+        if ((float)currentSanity / maxSanity < 0.2f)
+            sanityIcon.sprite = veryLowSanityImage;
+        else if ((float)currentSanity / maxSanity < 0.4f)
+            sanityIcon.sprite = lowSanityImage;
+        else if ((float)currentSanity / maxSanity < 0.6f)
+            sanityIcon.sprite = mediumSanityImage;
+        else if ((float)currentSanity / maxSanity < 0.8f)
+            sanityIcon.sprite = highSanityImage;
+        else
+            sanityIcon.sprite = veryHighSanityImage;
+
 
     }
 
