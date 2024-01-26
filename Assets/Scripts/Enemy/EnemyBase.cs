@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class EnemyBase : MonoBehaviour, IDamageable
 {
@@ -14,10 +15,12 @@ public class EnemyBase : MonoBehaviour, IDamageable
     /*[SerializeField]
     private string deathSound; when audio manager kicks in */
     //public UnityEvent enemyDeathEvent = new(); track deaths??
+    [Space()]
 
     /* Movement */
     [SerializeField]
     protected float baseSpeed = 0.1f;
+    [SerializeField]
     private bool isMovementPaused = false; //enemy movement paused (saves lookX)
     protected Vector2 moveDirection = Vector2.zero; //direction of movement, also used for determining sprite direction for overrides
 
@@ -57,7 +60,6 @@ public class EnemyBase : MonoBehaviour, IDamageable
         baseMaterial = spriteRenderer.material;
     }
 
-    // Update is called once per frame
     protected virtual void Update()
     {
         //if not dead, do sprite movement change
@@ -96,15 +98,12 @@ public class EnemyBase : MonoBehaviour, IDamageable
 
     public void ChangeHealth(int value)
     {
-        Debug.Log($"changing enemy health by {value}");
+        //Debug.Log($"changing enemy health by {value}");
 
         if (!isAlive)
             return;
 
         currentHealth = Mathf.Clamp(currentHealth + value, 0, maxHealth);
-        /*if (healthBar != null)
-            healthBar.SetHealth(currentHealth);
-        */
 
         if (flashCoroutine != null)
         {
