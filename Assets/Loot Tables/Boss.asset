@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 834cbaea00e6a4a4ba545b99a80cdc1b, type: 3}
-  m_Name: SanityRestore
+  m_Script: {fileID: 11500000, guid: 63a065df95aa11f4aa8d2da8d9b6a8e0, type: 3}
+  m_Name: Boss
   m_EditorClassIdentifier: 
-  GiftName: Sanity Restore
-  GiftIcon: {fileID: -1813272262993250906, guid: 42a25a9cdb46a1e40be441668a604e90, type: 3}
+  dropChance: 70
+  giftTable:
+  - {fileID: 8535070093143765210, guid: c8165e2d68f75174b989f14663ea58ec, type: 3}
+  - {fileID: 5621649631528815004, guid: a41a005a1d247274688caac69dac1a1c, type: 3}

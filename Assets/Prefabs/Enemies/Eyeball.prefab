@@ -206,6 +206,7 @@ MonoBehaviour:
   target: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}
   flashDuration: 0.1
+  giftLootTable: {fileID: 11400000, guid: bc699b8bdbe077e42b5b814bfd1a68bb, type: 2}
   isAlive: 1
 --- !u!114 &2688472121240724801
 MonoBehaviour:
@@ -220,9 +221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  detectionRange: 3.5
+  detectionRange: 4.5
   attackSound: 
   attackArea: {fileID: 0}
   pivotParent: {fileID: 0}
   attackCenter: {x: 0, y: 1}
-  bulletSpeed: 0.05
+  bulletSpeed: 0.04

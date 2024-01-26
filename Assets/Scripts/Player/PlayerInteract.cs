@@ -37,24 +37,28 @@ public class PlayerInteract : MonoBehaviour
     {
         //Debug.Log("interacting");
 
-        Collider2D focusItem = Physics2D.OverlapCircle(transform.position, interactRange, interactableLayer);
+        Collider2D focusItem = Physics2D.OverlapCircle((Vector2)transform.position + interactOffset, interactRange, interactableLayer);
         if (focusItem == null)
             return;
 
-        Gift gift = focusItem.GetComponent<Gift>();
-        if (gift != null)
-        {
-            if (giftSlot.AddGift(gift.GiftType))
-                Destroy(focusItem.gameObject);
-        }
-        else
+        //rip redundant checks if current gift exists
+        if (giftSlot.CurrentGift != null)
         {
             Child child = focusItem.GetComponent<Child>();
             if (child != null)
-            {               
+            {
                 if (giftSlot.RemoveGift())
                     child.GiveGift();
             }
+        }
+        else
+        {
+            Gift gift = focusItem.GetComponent<Gift>();
+            if (gift != null)
+            {
+                if (giftSlot.AddGift(gift.GiftType))
+                    Destroy(focusItem.gameObject);
+            }            
         }
             
     }

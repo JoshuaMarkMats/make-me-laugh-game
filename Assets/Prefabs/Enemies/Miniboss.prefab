@@ -366,7 +366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 10
-  deathDuration: 5
   enemyDeathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -375,6 +374,7 @@ MonoBehaviour:
   target: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}
   flashDuration: 0.1
+  giftLootTable: {fileID: 11400000, guid: 9d1987acefb242040bd87e277e0b8348, type: 2}
   isAlive: 1
 --- !u!114 &4280341069854155766
 MonoBehaviour:

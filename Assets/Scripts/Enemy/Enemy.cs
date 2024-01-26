@@ -21,7 +21,6 @@ public class Enemy : PoolableObject, IDamageable
     [SerializeField]
     private bool isMovementPaused = false; //enemy movement paused (saves lookX)
     protected Vector2 moveDirection = Vector2.zero; //direction of movement, also used for determining sprite direction for overrides
-
     //chasing
     [Space()]
     public Transform target;
@@ -36,6 +35,11 @@ public class Enemy : PoolableObject, IDamageable
     [SerializeField]
     private float flashDuration = 0.1f;
     private Coroutine flashCoroutine;
+
+    /* Loot */
+    [Space()]
+    [SerializeField]
+    private GiftLootTable giftLootTable;
 
     [SerializeField]
     private bool isAlive = true;
@@ -150,6 +154,9 @@ public class Enemy : PoolableObject, IDamageable
 
     private void RemoveEnemy()
     {
+        if (Random.Range(0f, 100f) <= giftLootTable.dropChance)
+            Instantiate(giftLootTable.GetGift(), transform.position, transform.rotation);
+
         enemyDeathEvent.Invoke();
         gameObject.SetActive(false);       
     }

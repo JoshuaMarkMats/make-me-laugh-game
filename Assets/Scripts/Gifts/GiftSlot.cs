@@ -10,6 +10,7 @@ public class GiftSlot : MonoBehaviour
 
     private GiftType currentGift;
 
+    public GiftType CurrentGift { get { return currentGift; } }
 
     public bool RemoveGift()
     {

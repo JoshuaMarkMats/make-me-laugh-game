@@ -207,6 +207,7 @@ MonoBehaviour:
   target: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: ec93b2af096d7394c9202f3c69fed027, type: 2}
   flashDuration: 0.1
+  giftLootTable: {fileID: 11400000, guid: bc699b8bdbe077e42b5b814bfd1a68bb, type: 2}
   isAlive: 1
 --- !u!114 &6866668713250267537
 MonoBehaviour:
