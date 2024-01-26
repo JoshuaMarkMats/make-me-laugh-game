@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tanks_crateAmmo_0: -1813272262993250906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
