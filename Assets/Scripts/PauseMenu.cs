@@ -36,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
+        isPaused = true;
     }
 
     public void ResumeGame() 
@@ -43,12 +44,15 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        isPaused = false;
     }
 
     public void ReturnToMain()
     {
         Debug.Log("Back To Main");
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        isPaused = false;
+        AudioManager.Instance.Stop("GameplayTheme");
+        SceneManager.LoadScene("MainMenu");       
     }
 }

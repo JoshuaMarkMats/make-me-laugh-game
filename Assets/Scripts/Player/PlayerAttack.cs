@@ -172,7 +172,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnGiggle()
     {
-        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking || !playerController.IsSane)
+        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking || !playerController.IsSane || PauseMenu.isPaused)
             return;
 
         AudioManager.Instance.Play(giggleSound);
@@ -189,7 +189,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnLaugh()
     {
-        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking || !playerController.IsSane)
+        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking || !playerController.IsSane || PauseMenu.isPaused)
             return;
 
         AudioManager.Instance.Play(laughSound);
@@ -206,7 +206,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnBoisterousLaugh()
     {
-        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking || !playerController.IsSane)
+        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking || !playerController.IsSane || PauseMenu.isPaused)
             return;
 
         AudioManager.Instance.Play(boisterousLaughSound);
