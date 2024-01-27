@@ -1,0 +1,662 @@
+fileFormatVersion: 2
+guid: f5e675263a3c730498863f5855f93e65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5611296331476656082
+    second: logotransparent_0
+  - first:
+      213: 5744403783225329482
+    second: logotransparent_1
+  - first:
+      213: -3519654497548252736
+    second: logotransparent_2
+  - first:
+      213: -5531561253541353132
+    second: logotransparent_3
+  - first:
+      213: 7694287790023305294
+    second: logotransparent_4
+  - first:
+      213: -3491804462191546740
+    second: logotransparent_5
+  - first:
+      213: 5851591886777742610
+    second: logotransparent_6
+  - first:
+      213: -3245980623656649104
+    second: logotransparent_7
+  - first:
+      213: -4791465743824870252
+    second: logotransparent_8
+  - first:
+      213: 7985222408391023778
+    second: logotransparent_9
+  - first:
+      213: -6590251902904994000
+    second: logotransparent_10
+  - first:
+      213: 6089398648387905559
+    second: logotransparent_11
+  - first:
+      213: 4202445136563924966
+    second: logotransparent_12
+  - first:
+      213: 5452683636740942751
+    second: logotransparent_13
+  - first:
+      213: -5600536834459079003
+    second: logotransparent_14
+  - first:
+      213: -98457899026392743
+    second: logotransparent_15
+  - first:
+      213: 4203335376139430431
+    second: logotransparent_16
+  - first:
+      213: 8361675922155172563
+    second: logotransparent_17
+  - first:
+      213: 7327620714740511725
+    second: logotransparent_18
+  - first:
+      213: 4561340039347635080
+    second: logotransparent_19
+  - first:
+      213: 3542539469030610317
+    second: logotransparent_20
+  - first:
+      213: -9162823779454619083
+    second: logotransparent_21
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logotransparent_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 298
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df5e1798445fdd40800000000000000
+      internalID: 5611296331476656082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 298
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a474e814ec838bf40800000000000000
+      internalID: 5744403783225329482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 309
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9c785e1eca72fc0800000000000000
+      internalID: -3519654497548252736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 283
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4596a5de852fb33b0800000000000000
+      internalID: -5531561253541353132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 283
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48e6fb9af997ca60800000000000000
+      internalID: 7694287790023305294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_5
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 294
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ee2fd875e9a8fc0800000000000000
+      internalID: -3491804462191546740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215f1f561d7053150800000000000000
+      internalID: 5851591886777742610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 283
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ef42b12d5f3f2d0800000000000000
+      internalID: -3245980623656649104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_8
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 234
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494add1da4b418db0800000000000000
+      internalID: -4791465743824870252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 234
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acd2a0197531de60800000000000000
+      internalID: 7985222408391023778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 245
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037710b9fc8ba84a0800000000000000
+      internalID: -6590251902904994000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 157
+        width: 126
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718a7e4cec3e18450800000000000000
+      internalID: 6089398648387905559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_12
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 157
+        width: 115
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efe5f01695125a30800000000000000
+      internalID: 4202445136563924966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 157
+        width: 128
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b6788c0e2dbab40800000000000000
+      internalID: 5452683636740942751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 157
+        width: 126
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae63960c65e642b0800000000000000
+      internalID: -5600536834459079003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 234
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959533fff0532aef0800000000000000
+      internalID: -98457899026392743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 37
+        width: 128
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1aaf9e114f355a30800000000000000
+      internalID: 4203335376139430431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_17
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 37
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2fefaf2f3aa0470800000000000000
+      internalID: 8361675922155172563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_18
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 112
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3f6e67730f0b560800000000000000
+      internalID: 7327620714740511725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_19
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 37
+        width: 120
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883051949922d4f30800000000000000
+      internalID: 4561340039347635080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_20
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 37
+        width: 124
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85de5eb0e0a92130800000000000000
+      internalID: 3542539469030610317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logotransparent_21
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 37
+        width: 121
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532fa1eb15c17d080800000000000000
+      internalID: -9162823779454619083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      logotransparent_0: 5611296331476656082
+      logotransparent_1: 5744403783225329482
+      logotransparent_10: -6590251902904994000
+      logotransparent_11: 6089398648387905559
+      logotransparent_12: 4202445136563924966
+      logotransparent_13: 5452683636740942751
+      logotransparent_14: -5600536834459079003
+      logotransparent_15: -98457899026392743
+      logotransparent_16: 4203335376139430431
+      logotransparent_17: 8361675922155172563
+      logotransparent_18: 7327620714740511725
+      logotransparent_19: 4561340039347635080
+      logotransparent_2: -3519654497548252736
+      logotransparent_20: 3542539469030610317
+      logotransparent_21: -9162823779454619083
+      logotransparent_3: -5531561253541353132
+      logotransparent_4: 7694287790023305294
+      logotransparent_5: -3491804462191546740
+      logotransparent_6: 5851591886777742610
+      logotransparent_7: -3245980623656649104
+      logotransparent_8: -4791465743824870252
+      logotransparent_9: 7985222408391023778
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

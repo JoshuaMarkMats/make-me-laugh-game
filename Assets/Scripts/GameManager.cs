@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     // Singleton instance of the game manager
+
     public static GameManager Instance { get; private set; }
 
     public UnityEvent game_overEvent = new();
@@ -32,4 +35,5 @@ public class GameManager : MonoBehaviour
     }
 
 
+    
 }
