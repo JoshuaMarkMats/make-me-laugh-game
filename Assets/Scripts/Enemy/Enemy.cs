@@ -34,6 +34,8 @@ public class Enemy : PoolableObject, IDamageable
     private Material flashMaterial;
     [SerializeField]
     private float flashDuration = 0.1f;
+    [SerializeField]
+    private string enemyHitSound = "EnemyHit";
     private Coroutine flashCoroutine;
 
     /* Loot */
@@ -136,6 +138,8 @@ public class Enemy : PoolableObject, IDamageable
 
         flashCoroutine = StartCoroutine(FlashEffect());
 
+        AudioManager.Instance.Play(enemyHitSound);
+
         if (currentHealth <= 0)
             EnemyDeath();
     }
@@ -154,7 +158,7 @@ public class Enemy : PoolableObject, IDamageable
         animator.SetTrigger("death");
         /*if (flashCoroutine != null)
             StopCoroutine(flashCoroutine);*/
-        spriteRenderer.material = baseMaterial;
+        //spriteRenderer.material = baseMaterial;
     }
 
     private void RemoveEnemy()

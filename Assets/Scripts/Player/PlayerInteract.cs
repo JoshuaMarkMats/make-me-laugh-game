@@ -6,6 +6,8 @@ public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]
     private GiftSlot giftSlot;
+    [SerializeField]
+    private string giftPickedUpSound = "GiftPickedUp";
 
     [SerializeField]
     private float interactRange = 2f;
@@ -59,7 +61,11 @@ public class PlayerInteract : MonoBehaviour
             if (gift != null)
             {
                 if (giftSlot.AddGift(gift.GiftType))
+                {
+                    AudioManager.Instance.Play(giftPickedUpSound);
                     Destroy(focusItem.gameObject);
+                }
+                    
             }            
         }
             

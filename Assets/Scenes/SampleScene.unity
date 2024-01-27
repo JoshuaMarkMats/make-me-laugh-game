@@ -1022,6 +1022,30 @@ MonoBehaviour:
     pitch: 1.65
     loop: 0
     source: {fileID: 0}
+  - name: EnemyHit
+    clip: {fileID: 8300000, guid: 1663b5d875f5a6446bb5e4444fa0fcd0, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: EyeAttack
+    clip: {fileID: 8300000, guid: 7214cf6061e07c44bb45352225440348, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossSpawn
+    clip: {fileID: 8300000, guid: 0ec26f39e882ff041a272372c3a8dd49, type: 3}
+    volume: 1
+    pitch: 0.77
+    loop: 0
+    source: {fileID: 0}
+  - name: GiftPickedUp
+    clip: {fileID: 8300000, guid: 1f707735a7d410549bb3ae41b9baf1cf, type: 3}
+    volume: 0.928
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &289656719
 Transform:
   m_ObjectHideFlags: 0
@@ -3823,6 +3847,7 @@ MonoBehaviour:
   rangedEnemyCap: 10
   bossEnemy: {fileID: 5149410500327748856, guid: 5a12915261f55d046a0d8aa36a0f8f4e, type: 3}
   bossEnemyCap: 20
+  bossSpawnSound: BossSpawn
   bullet: {fileID: 4412544483953259065, guid: 8453b16390daee541a1b51705478abe8, type: 3}
   SpawnDelay: 10
   SpawnMaxDelay: 25
