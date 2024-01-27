@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ButtonLogics : MonoBehaviour
 {
     public GameObject howToPlay;
-    bool on = false;
 
     public GameObject page1;
     public GameObject page2;
@@ -20,8 +19,7 @@ public class ButtonLogics : MonoBehaviour
 
     public void HowToPlay()
     {
-        on = !on;
-        howToPlay.SetActive(on);
+        howToPlay.SetActive(true);
         Debug.Log("Opening How To Play Instructions!!");
 
     }
