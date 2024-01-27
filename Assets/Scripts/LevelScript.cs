@@ -14,14 +14,17 @@ public class LevelScript : MonoBehaviour
     [Space()]
 
     [SerializeField]
-    private float gameOverDuration = 3f;
+    private float gameOverDuration = 5f;
     [SerializeField]
-    private float gameWinDuration = 3f;
+    private float gameWinDuration = 5f;
     [SerializeField]
     private CinemachineVirtualCamera childVirtualCamera;
+    [SerializeField]
+    private Child child;
 
     public void GameOver()
     {
+        child.Kill();
         bossKillEvent.RemoveAllListeners();
         StartCoroutine(GameOverSequence());
     }
@@ -35,6 +38,7 @@ public class LevelScript : MonoBehaviour
 
     public void GameWin()
     {
+        child.MakeHappy();
         IsGameWon = true;
         clearEnemiesEvent.Invoke();
         clearEnemiesEvent.RemoveAllListeners();
