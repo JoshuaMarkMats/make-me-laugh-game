@@ -11,7 +11,7 @@ public class MeleeAttack : MonoBehaviour
     protected int damage = 10;
     [SerializeField]
     protected float detectionRange = 2f;
-    protected bool isAttacking = false;
+    protected bool isAttacking;
     [SerializeField]
     protected string attackSound;
     [SerializeField]
@@ -25,13 +25,16 @@ public class MeleeAttack : MonoBehaviour
     protected Animator animator;
 
     protected const string ATTACK_TRIGGER = "attack";
-    private const string FINISH_ATTACK_TRIGGER = "finishAttack";
 
     void Start()
     {
         enemyController= GetComponent<Enemy>();
         animator = GetComponent<Animator>();
-        //enemyController.enemyDeathEvent.AddListener(CancelAttack);
+    }
+
+    private void OnEnable()
+    {
+        isAttacking = false;
     }
 
     protected virtual void Update()
@@ -68,6 +71,5 @@ public class MeleeAttack : MonoBehaviour
     {
         isAttacking = false;
         enemyController.IsMovementPaused = false;
-        animator.SetTrigger(FINISH_ATTACK_TRIGGER);
     }
 }

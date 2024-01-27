@@ -32,20 +32,23 @@ public class BossAttack : MonoBehaviour
     [SerializeField]
     private Transform pivotParent;
 
-    private bool isAttacking = false;
+    private bool isAttacking;
 
     private Enemy enemyController;
     private Animator animator;
 
     private const string BASIC_ATTACK_TRIGGER = "basicAttack";
     private const string AOE_ATTACK_TRIGGER = "aoeAttack";
-    private const string FINISH_ATTACK_TRIGGER = "finishAttack";
 
     void Start()
     {
         enemyController= GetComponent<Enemy>();
         animator = GetComponent<Animator>();
-        //enemyController.enemyDeathEvent.AddListener(CancelAttack);
+    }
+
+    private void OnEnable()
+    {
+        isAttacking= false;
     }
 
     void Update()
@@ -89,6 +92,5 @@ public class BossAttack : MonoBehaviour
     {
         isAttacking = false;
         enemyController.IsMovementPaused = false;
-        animator.SetTrigger(FINISH_ATTACK_TRIGGER);
     }
 }
