@@ -15,9 +15,9 @@ TagManager:
   - Player
   - PlayerAttack
   - EnemyAttack
-  - Interactable
+  - GiftInteractable
   - EnemyBullet
-  - 
+  - ChildInteractable
   - 
   - 
   - 

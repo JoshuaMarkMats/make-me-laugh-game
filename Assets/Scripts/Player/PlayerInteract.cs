@@ -12,7 +12,9 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]
     private Vector2 interactOffset = Vector2.up;
     [SerializeField]
-    private LayerMask interactableLayer;
+    private LayerMask giftLayer;
+    [SerializeField]
+    private LayerMask childLayer;
 
     private void OnDrawGizmosSelected()
     {
@@ -35,16 +37,16 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnInteract()
     {
-        //Debug.Log("interacting");
-
-        Collider2D focusItem = Physics2D.OverlapCircle((Vector2)transform.position + interactOffset, interactRange, interactableLayer);
-        if (focusItem == null)
-            return;
+        //Debug.Log("interacting");        
 
         //rip redundant checks if current gift exists
         if (giftSlot.CurrentGift != null)
         {
-            Child child = focusItem.GetComponent<Child>();
+            Collider2D collider2d = Physics2D.OverlapCircle((Vector2)transform.position + interactOffset, interactRange, childLayer);
+            if (collider2d == null)
+                return;
+
+            Child child = collider2d.GetComponent<Child>();
             if (child != null)
             {
                 if (giftSlot.RemoveGift())
@@ -53,6 +55,10 @@ public class PlayerInteract : MonoBehaviour
         }
         else
         {
+            Collider2D focusItem = Physics2D.OverlapCircle((Vector2)transform.position + interactOffset, interactRange, giftLayer);
+            if (focusItem == null)
+                return;
+
             Gift gift = focusItem.GetComponent<Gift>();
             if (gift != null)
             {

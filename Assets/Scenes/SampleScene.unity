@@ -2761,7 +2761,7 @@ MonoBehaviour:
   veryLowSanityImage: {fileID: -1386551057003036293, guid: 5f390325fda1320419912aece15adf91, type: 3}
   lowSanityImage: {fileID: -2617477339148098199, guid: 96d853a85358e9e4a9ebe7ac99677ef1, type: 3}
   mediumSanityImage: {fileID: -5734438988675653137, guid: 4abfb256267e84f4b88abdb960144986, type: 3}
-  highSanityImage: {fileID: 0}
+  highSanityImage: {fileID: -5734438988675653137, guid: 4abfb256267e84f4b88abdb960144986, type: 3}
   veryHighSanityImage: {fileID: -8617291234937718428, guid: 90bfecc22c1411846abff9d862970f2c, type: 3}
   IsMovementPaused: 0
   animator: {fileID: 0}
@@ -2862,9 +2862,9 @@ MonoBehaviour:
   giggleCooldownSlider: {fileID: 1214779760}
   giggleCooldownText: {fileID: 46619846}
   laughDamage: 4
-  laughCooldown: 3
+  laughCooldown: 4
   laughAttackArea: {fileID: 166546436}
-  laughStaminaCost: 10
+  laughStaminaCost: 17
   laughCooldownSlider: {fileID: 627557009}
   laughCooldownText: {fileID: 1839620571}
   boisterousLaughDamage: 5
@@ -2890,9 +2890,12 @@ MonoBehaviour:
   giftSlot: {fileID: 1040928791}
   interactRange: 0.9
   interactOffset: {x: 0, y: 0.12}
-  interactableLayer:
+  giftLayer:
     serializedVersion: 2
     m_Bits: 1024
+  childLayer:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!95 &1444135709
 Animator:
   serializedVersion: 7
@@ -3566,7 +3569,7 @@ GameObject:
   - component: {fileID: 1833361293}
   - component: {fileID: 1833361295}
   - component: {fileID: 1833361296}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
