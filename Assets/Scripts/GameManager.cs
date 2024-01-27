@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Button startButton;
+    public Button howToButton;
+    public Button exitButton;
+
     // Singleton instance of the game manager
     public static GameManager Instance { get; private set; }
 
@@ -140,5 +146,26 @@ public class GameManager : MonoBehaviour
     public void SetFps(int fps)
     { 
         Application.targetFrameRate = fps;
+    }
+
+    //start gameplay from  main menu
+    public void StartGame() {
+        Debug.Log("Game Started");
+    
+    }
+
+    //open how to play UI
+    public void HowToPlay()
+    {
+        Debug.Log("How to Play Opened!");
+    
+    }
+
+    //close game application from main menu
+    public void ExitGame() {
+        Debug.Log("Game Exited!");
+        Application.Quit();
+    
+    
     }
 }
