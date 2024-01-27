@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90bfecc22c1411846abff9d862970f2c
+guid: b4851078718aec147bac40c589afc156
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8617291234937718428
-    second: 5Laughter_0
+      213: 409270364162158335
+    second: GameIconTemp_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5Laughter_0
+      name: GameIconTemp_0
       rect:
         serializedVersion: 2
-        x: 640
-        y: 310
+        x: 11
+        y: 48
         width: 560
-        height: 560
+        height: 479
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4693377374b396880800000000000000
-      internalID: -8617291234937718428
+      spriteID: ffeeaf05a350ea500800000000000000
+      internalID: 409270364162158335
       vertices: []
       indices: 
       edges: []
@@ -121,15 +121,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 233e0ea360b287f47848c0f3ff4f6b82
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      5Laughter_0: -8617291234937718428
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
