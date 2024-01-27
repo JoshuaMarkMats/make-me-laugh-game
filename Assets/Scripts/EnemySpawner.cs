@@ -53,11 +53,11 @@ public class EnemySpawner : MonoBehaviour
     private float spawnDistance = 5f;
     private int currentWave = 1;
 
-    public Transform player;
-    
-    
+    [Space()]
 
+    public Transform player;
     [SerializeField]
+    private LevelScript levelScript;
     public static UnityEvent meleeEnemyDeathEvent = new();
 
     public void Awake()
@@ -85,7 +85,7 @@ public class EnemySpawner : MonoBehaviour
         WaitForSeconds Wait = new(SpawnDelay);
         WaitForSeconds IntervalWait = new(SpawnInterval);
 
-        while (true)
+        while (!levelScript.IsGameWon)
         {
             /* MELEE */
 
@@ -152,7 +152,7 @@ public class EnemySpawner : MonoBehaviour
         enemy.target = player;
         enemy.IsAlive = true;
         enemy.IsMovementPaused = false;
-        //enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        levelScript.clearEnemiesEvent.AddListener(enemy.Kill);
         enemy.transform.position = Random.insideUnitCircle.normalized * spawnDistance;
         enemy.enemyDeathEvent.AddListener(ReduceMeleeCount);
         enemy.gameObject.SetActive(true);
@@ -179,7 +179,7 @@ public class EnemySpawner : MonoBehaviour
         enemy.IsAlive = true;
         enemy.IsMovementPaused = false;
         enemyAttack.bulletPool = bulletPool;
-        //enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        levelScript.clearEnemiesEvent.AddListener(enemy.Kill);
         enemy.transform.position = Random.insideUnitCircle.normalized * spawnDistance; 
         enemy.enemyDeathEvent.AddListener(ReduceRangedCount);
         enemy.gameObject.SetActive(true);
@@ -199,12 +199,13 @@ public class EnemySpawner : MonoBehaviour
 
         bossAlive++;
 
-        Enemy enemy = poolableObject.GetComponent<Enemy>();
+        EnemyBoss enemy = poolableObject.GetComponent<EnemyBoss>();
 
         enemy.target = player;
         enemy.IsAlive = true;
         enemy.IsMovementPaused = false;
-        //enemy.transform.position = new Vector2((float)Mathf.Cos(Random.Range(0f, 3.1415f)) * spawnDistance, (float)Mathf.Sin(Random.Range(0f, 3.1415f)) * spawnDistance);
+        enemy.LevelScript = levelScript;
+        levelScript.clearEnemiesEvent.AddListener(enemy.Kill);
         enemy.transform.position = Random.insideUnitCircle.normalized * spawnDistance;
         enemy.enemyDeathEvent.AddListener(ReduceBossCount);
         enemy.gameObject.SetActive(true);

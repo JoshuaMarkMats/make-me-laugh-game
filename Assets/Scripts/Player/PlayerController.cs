@@ -31,11 +31,17 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField]
     private Sprite veryHighSanityImage;
 
+    [Space()]
     public bool IsMovementPaused = false;
+    [SerializeField]
+    private LevelScript levelScript;
 
     public Animator animator;
+    //private Coroutine gameOverSequenceCoroutine;
     private Vector2 moveDirection = Vector2.zero;
     private Rigidbody2D playerRigidbody;  
+
+    public bool IsSane { get { return isSane; } }
 
     private void Awake()
     {
@@ -50,7 +56,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         sanityBar.SetMaxValue(maxSanity);
         sanityBar.SetValue(currentSanity);
 
-        LevelScript.bossKillEvent.AddListener(BossKillHeal);
+        levelScript.bossKillEvent.AddListener(BossKillHeal);
     }
 
     // Update is called once per frame
@@ -84,7 +90,15 @@ public class PlayerController : MonoBehaviour, IDamageable
         UpdateSanityIcon();
 
         if (currentSanity <= 0)
-           GameOver();
+        {
+            levelScript.GameOver();
+            isSane = false;
+        }
+        else if (currentSanity >= maxSanity)
+        {
+            levelScript.GameWin();
+        }
+            
 
     }
 
@@ -102,10 +116,5 @@ public class PlayerController : MonoBehaviour, IDamageable
             sanityIcon.sprite = veryHighSanityImage;
 
 
-    }
-
-    private void GameOver()
-    {
-        LevelScript.bossKillEvent.RemoveAllListeners();
     }
 }

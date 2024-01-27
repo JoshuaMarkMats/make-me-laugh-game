@@ -117,7 +117,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         //only do aiming if not in the middle of an attack
-        if (!isAttacking)
+        if (!isAttacking && playerController.IsSane)
         {
             float aimAngle = Vector2.SignedAngle(Vector2.right, GetAimDirection());
             pivotParent.transform.eulerAngles = new Vector3(0, 0, aimAngle);
@@ -129,6 +129,9 @@ public class PlayerAttack : MonoBehaviour
 
     void ManageTimers()
     {
+        if (!playerController.IsSane)
+            return;
+
         if (currentStamina < maxStamina)
         {
             currentStamina += Time.deltaTime * staminaRegen;
@@ -163,7 +166,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnGiggle()
     {
-        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking)
+        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking || !playerController.IsSane)
             return;
 
         isAttacking= true;
@@ -178,7 +181,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnLaugh()
     {
-        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking)
+        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking || !playerController.IsSane)
             return;
 
         isAttacking = true;
@@ -193,7 +196,7 @@ public class PlayerAttack : MonoBehaviour
 
     void OnBoisterousLaugh()
     {
-        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking)
+        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking || !playerController.IsSane)
             return;
 
         isAttacking = true;
@@ -210,7 +213,6 @@ public class PlayerAttack : MonoBehaviour
     {
         isAttacking = false;
         playerController.IsMovementPaused = false;
-        //animator.SetTrigger(FINISH_ATTACK_TRIGGER);
     }
 
     private Vector2 GetAimDirection()
