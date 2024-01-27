@@ -46,9 +46,11 @@ public class RangedAttack : MeleeAttack
 
             bullet.speed = bulletSpeed;
             bullet.damage = damage;
-            bullet.direction = enemyController.VectorToTarget.normalized;
+
+            Vector2 vectorToTarget = (Vector2)enemyController.target.position - ((Vector2)transform.position + attackCenter);
+            bullet.direction = vectorToTarget.normalized;
             bullet.transform.position = (Vector2)transform.position + attackCenter;
-            bullet.transform.rotation = Quaternion.Euler(0f, 0f, Vector2.SignedAngle(Vector2.right, enemyController.VectorToTarget.normalized));
+            bullet.transform.rotation = Quaternion.Euler(0f, 0f, Vector2.SignedAngle(Vector2.right, bullet.direction));
         }
     }
 }

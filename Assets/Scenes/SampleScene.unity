@@ -18272,7 +18272,7 @@ MonoBehaviour:
   SpawnMaxDelay: 25
   SpawnDelayIncrease: 0.5
   SpawnInterval: 0.7
-  spawnDistance: 11
+  spawnDistance: 9
   player: {fileID: 1444135702}
   levelScript: {fileID: 382659326}
 --- !u!4 &1818321008
