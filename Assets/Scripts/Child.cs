@@ -12,6 +12,8 @@ public class Child : MonoBehaviour
     [Space()]
     [SerializeField]
     private GameObject interactIcon;
+    [SerializeField]
+    private string receiveGiftSound = "ChildLaugh";
 
     private Animator childAnimator;
 
@@ -26,6 +28,8 @@ public class Child : MonoBehaviour
 
     public void GiveGift()
     {
+        AudioManager.Instance.Play(receiveGiftSound);
+
         player.ChangeHealth(sanityIncrease);
         childAnimator.SetTrigger(LAUGH_TRIGGER);
     }

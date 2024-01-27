@@ -950,6 +950,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &289656717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289656719}
+  - component: {fileID: 289656718}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &289656718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289656717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60f92f63fe042b408d3bbf8b0b3570c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GameplayTheme
+    clip: {fileID: 8300000, guid: 23b46a0bcad2dea4c99eeb0642e53d2e, type: 3}
+    volume: 0.35
+    pitch: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: WinTheme
+    clip: {fileID: 8300000, guid: d6071d3d093d0394db05a3dfd454dd03, type: 3}
+    volume: 1
+    pitch: 0.6
+    loop: 0
+    source: {fileID: 0}
+  - name: LoseTheme
+    clip: {fileID: 8300000, guid: aeadce35d66f5cc4db066a2db26ba9a1, type: 3}
+    volume: 1
+    pitch: 0.7
+    loop: 0
+    source: {fileID: 0}
+  - name: Giggle
+    clip: {fileID: 8300000, guid: 3359deb7636515448b75d9e80391f820, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Laugh
+    clip: {fileID: 8300000, guid: 102454e0af664254588676d929e8ca78, type: 3}
+    volume: 1
+    pitch: 1.25
+    loop: 0
+    source: {fileID: 0}
+  - name: BoisterousLaugh
+    clip: {fileID: 8300000, guid: 3a1a50b7f2c3cb04ca90076797abce7f, type: 3}
+    volume: 1
+    pitch: 1.25
+    loop: 0
+    source: {fileID: 0}
+  - name: ChildLaugh
+    clip: {fileID: 8300000, guid: 9d9ab4e1e1d663d4b90e06516eff6a85, type: 3}
+    volume: 1
+    pitch: 1.65
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &289656719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289656717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.72732866, y: 0.76337415, z: 0.028408047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382659325
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1077,9 @@ MonoBehaviour:
   gameWinDuration: 3
   childVirtualCamera: {fileID: 1064887135}
   child: {fileID: 1833361295}
+  gameplayTheme: GameplayTheme
+  winTheme: WinTheme
+  loseTheme: LoseTheme
 --- !u!4 &382659327
 Transform:
   m_ObjectHideFlags: 0
@@ -2836,14 +2926,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.06
-  currentSanity: 99
+  currentSanity: 30
   maxSanity: 100
   SanityRestoreOnBossKill: 5
   sanityBar: {fileID: 450448308}
   sanityIcon: {fileID: 1859755072}
   veryLowSanityImage: {fileID: -1386551057003036293, guid: 5f390325fda1320419912aece15adf91, type: 3}
   lowSanityImage: {fileID: -2617477339148098199, guid: 96d853a85358e9e4a9ebe7ac99677ef1, type: 3}
-  mediumSanityImage: {fileID: -5734438988675653137, guid: 4abfb256267e84f4b88abdb960144986, type: 3}
+  mediumSanityImage: {fileID: -3884418451818132396, guid: ff1ad8f2ca7aa8746a2cdf0d1e5389b0, type: 3}
   highSanityImage: {fileID: -5734438988675653137, guid: 4abfb256267e84f4b88abdb960144986, type: 3}
   veryHighSanityImage: {fileID: -8617291234937718428, guid: 90bfecc22c1411846abff9d862970f2c, type: 3}
   IsMovementPaused: 0
@@ -2943,18 +3033,21 @@ MonoBehaviour:
   giggleCooldown: 0.5
   giggleAttackArea: {fileID: 560532974}
   giggleStaminaCost: 2
+  giggleSound: Giggle
   giggleCooldownSlider: {fileID: 1214779760}
   giggleCooldownText: {fileID: 46619846}
   laughDamage: 4
   laughCooldown: 4
   laughAttackArea: {fileID: 166546436}
   laughStaminaCost: 17
+  laughSound: Laugh
   laughCooldownSlider: {fileID: 627557009}
   laughCooldownText: {fileID: 1839620571}
   boisterousLaughDamage: 5
   boisterousLaughCooldown: 7.5
   boisterousLaughAttackArea: {fileID: 1549020600}
   boisterousLaughStaminaCost: 25
+  boisterousLaughSound: BoisterousLaugh
   boisterousLaughCooldownSlider: {fileID: 1516233838}
   boisterousLaughCooldownText: {fileID: 792483686}
   playerController: {fileID: 0}
@@ -3856,6 +3949,7 @@ MonoBehaviour:
   player: {fileID: 1444135704}
   sanityIncrease: 5
   interactIcon: {fileID: 1375623845}
+  receiveGiftSound: ChildLaugh
 --- !u!58 &1833361296
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4465,3 +4559,4 @@ SceneRoots:
   - {fileID: 245034105}
   - {fileID: 1532994008}
   - {fileID: 1741480716}
+  - {fileID: 289656719}

@@ -22,8 +22,23 @@ public class LevelScript : MonoBehaviour
     [SerializeField]
     private Child child;
 
+    [Space()]
+    [SerializeField]
+    private string gameplayTheme = "GameplayTheme";
+    [SerializeField]
+    private string winTheme = "WinTheme";
+    [SerializeField]
+    private string loseTheme = "LoseTheme";
+
+    private void Start()
+    {
+        AudioManager.Instance.Play(gameplayTheme);
+    }
+
     public void GameOver()
     {
+        AudioManager.Instance.Stop(gameplayTheme);
+        AudioManager.Instance.Play(loseTheme);
         child.Kill();
         bossKillEvent.RemoveAllListeners();
         StartCoroutine(GameOverSequence());
@@ -38,6 +53,8 @@ public class LevelScript : MonoBehaviour
 
     public void GameWin()
     {
+        AudioManager.Instance.Stop(gameplayTheme);
+        AudioManager.Instance.Play(winTheme);
         child.MakeHappy();
         IsGameWon = true;
         clearEnemiesEvent.Invoke();

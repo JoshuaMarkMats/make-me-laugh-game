@@ -33,6 +33,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float giggleStaminaCost = 2;
     [SerializeField]
+    private string giggleSound = "Giggle";
+    [SerializeField]
     private Slider giggleCooldownSlider;
     [SerializeField]
     private TextMeshProUGUI giggleCooldownText;
@@ -47,6 +49,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float laughStaminaCost = 10;
     [SerializeField]
+    private string laughSound = "Laugh";
+    [SerializeField]
     private Slider laughCooldownSlider;
     [SerializeField]
     private TextMeshProUGUI laughCooldownText;
@@ -60,6 +64,8 @@ public class PlayerAttack : MonoBehaviour
     private float boisterousLaughCurrentCooldown;
     [SerializeField]
     private float boisterousLaughStaminaCost = 25;
+    [SerializeField]
+    private string boisterousLaughSound = "BoisterousLaugh";
     [SerializeField]
     private Slider boisterousLaughCooldownSlider;
     [SerializeField]
@@ -169,7 +175,9 @@ public class PlayerAttack : MonoBehaviour
         if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking || !playerController.IsSane)
             return;
 
-        isAttacking= true;
+        AudioManager.Instance.Play(giggleSound);
+
+        isAttacking = true;
         playerController.IsMovementPaused = true;
         playerController.animator.SetTrigger(GIGGLE_TRIGGER);
 
@@ -183,6 +191,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking || !playerController.IsSane)
             return;
+
+        AudioManager.Instance.Play(laughSound);
 
         isAttacking = true;
         playerController.IsMovementPaused = true;
@@ -198,6 +208,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking || !playerController.IsSane)
             return;
+
+        AudioManager.Instance.Play(boisterousLaughSound);
 
         isAttacking = true;
         playerController.IsMovementPaused = true;
