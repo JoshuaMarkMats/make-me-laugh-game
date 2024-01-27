@@ -16096,7 +16096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.06
-  currentSanity: 99
+  currentSanity: 30
   maxSanity: 100
   SanityRestoreOnBossKill: 5
   sanityBar: {fileID: 450448308}
