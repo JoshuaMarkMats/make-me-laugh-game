@@ -31,9 +31,24 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //game_overEvent.AddListener(CodeBlockManager.Instance.EraseData);
-        //game_winEvent.AddListener(CodeBlockManager.Instance.EraseData);
+        game_winEvent.AddListener(winNow);
+        game_overEvent.AddListener(loseNow);
+
+
     }
 
+    public void winNow()
+    {
+        SceneManager.LoadScene("WinScene");
 
-    
+
+    }
+
+    public void loseNow()
+    {
+        SceneManager.LoadScene("LoseScene");
+
+
+    }
+
 }

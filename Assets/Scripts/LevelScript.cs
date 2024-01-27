@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LevelScript : MonoBehaviour
 {
     public UnityEvent bossKillEvent = new();
     public UnityEvent clearEnemiesEvent = new();
-
+   
     public bool IsGameWon = false;
 
     [Space()]
@@ -60,6 +61,8 @@ public class LevelScript : MonoBehaviour
         clearEnemiesEvent.Invoke();
         clearEnemiesEvent.RemoveAllListeners();
         StartCoroutine(GameWinSequence());
+
+       
     }
 
     private IEnumerator GameWinSequence()
