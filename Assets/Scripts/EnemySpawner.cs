@@ -30,6 +30,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private int bossEnemyCap = 20;
     private int bossAlive = 0;
+    [SerializeField]
+    private string bossSpawnSound = "BossSpawn";
 
     [Space()]
 
@@ -200,6 +202,8 @@ public class EnemySpawner : MonoBehaviour
         bossAlive++;
 
         EnemyBoss enemy = poolableObject.GetComponent<EnemyBoss>();
+
+        AudioManager.Instance.Play(bossSpawnSound);
 
         enemy.target = player;
         enemy.IsAlive = true;

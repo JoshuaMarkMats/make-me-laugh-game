@@ -13,7 +13,7 @@ public class MeleeAttack : MonoBehaviour
     protected float detectionRange = 2f;
     protected bool isAttacking = false;
     [SerializeField]
-    private string attackSound;
+    protected string attackSound;
     [SerializeField]
     private AttackArea attackArea;
 

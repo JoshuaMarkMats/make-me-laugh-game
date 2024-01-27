@@ -42,6 +42,8 @@ public class RangedAttack : MeleeAttack
 
         if (poolableObject.TryGetComponent<Bullet>(out var bullet))
         {
+            AudioManager.Instance.Play(attackSound);
+
             bullet.speed = bulletSpeed;
             bullet.damage = damage;
             bullet.direction = enemyController.VectorToTarget.normalized;
