@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41711067d3abb44495e60491a7ca537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffect: {fileID: 0}
 --- !u!58 &5869033185106016646
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -364,8 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fbd86d75c544f4381e09c184883f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
+  maxHealth: 15
+  currentHealth: 15
   enemyDeathEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -477,3 +478,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41711067d3abb44495e60491a7ca537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackEffect: {fileID: 0}

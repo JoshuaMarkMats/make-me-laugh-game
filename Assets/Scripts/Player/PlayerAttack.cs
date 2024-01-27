@@ -10,10 +10,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private Transform aimIndicator;
 
-    /*float aimAngle = 0f;
-    [SerializeField]
-    private float aimConeAngle = 30f;
-    public float attackRange = 5f;*/
     [Space()]
 
     [SerializeField]
@@ -71,8 +67,15 @@ public class PlayerAttack : MonoBehaviour
 
     [Space()]
 
+    private bool isAttacking = false;
+    [SerializeField]
+    private PlayerController playerController;
     [SerializeField]
     private GameObject pivotParent; //parent object to allow children to have diff pivot points for rotation
+
+    private const string GIGGLE_TRIGGER = "giggle";
+    private const string LAUGH_TRIGGER = "laugh";
+    private const string BOISTEROUS_LAUGH_TRIGGER = "boisterousLaugh";
 
 
     /*void OnDrawGizmos()
@@ -96,7 +99,9 @@ public class PlayerAttack : MonoBehaviour
     }*/
 
     private void Start()
-    {
+    { 
+        playerController = GetComponent<PlayerController>();
+
         staminaBar.SetMaxValue(maxStamina);
         staminaBar.SetValue(currentStamina);
 
@@ -111,8 +116,13 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        float aimAngle = Vector2.SignedAngle(Vector2.right, GetAimDirection());
-        pivotParent.transform.eulerAngles = new Vector3(0, 0, aimAngle);
+        //only do aiming if not in the middle of an attack
+        if (!isAttacking)
+        {
+            float aimAngle = Vector2.SignedAngle(Vector2.right, GetAimDirection());
+            pivotParent.transform.eulerAngles = new Vector3(0, 0, aimAngle);
+        }
+        
 
         ManageTimers();
     }
@@ -153,8 +163,13 @@ public class PlayerAttack : MonoBehaviour
 
     void OnGiggle()
     {
-        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost)
+        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking)
             return;
+
+        isAttacking= true;
+        playerController.IsMovementPaused = true;
+        playerController.animator.SetTrigger(GIGGLE_TRIGGER);
+
         giggleAttackArea.Attack(giggleDamage);
         giggleCurrentCooldown = giggleCooldown;
         
@@ -163,9 +178,13 @@ public class PlayerAttack : MonoBehaviour
 
     void OnLaugh()
     {
-        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost)
+        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking)
             return;
-        
+
+        isAttacking = true;
+        playerController.IsMovementPaused = true;
+        playerController.animator.SetTrigger(LAUGH_TRIGGER);
+
         laughAttackArea.Attack(laughDamage);
         laughCurrentCooldown = laughCooldown;
 
@@ -174,13 +193,24 @@ public class PlayerAttack : MonoBehaviour
 
     void OnBoisterousLaugh()
     {
-        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost)
+        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking)
             return;
+
+        isAttacking = true;
+        playerController.IsMovementPaused = true;
+        playerController.animator.SetTrigger(BOISTEROUS_LAUGH_TRIGGER);
 
         boisterousLaughAttackArea.Attack(boisterousLaughDamage);
         boisterousLaughCurrentCooldown = boisterousLaughCooldown;
 
         currentStamina -= boisterousLaughStaminaCost;
+    }
+
+    private void FinishAttack()
+    {
+        isAttacking = false;
+        playerController.IsMovementPaused = false;
+        //animator.SetTrigger(FINISH_ATTACK_TRIGGER);
     }
 
     private Vector2 GetAimDirection()
