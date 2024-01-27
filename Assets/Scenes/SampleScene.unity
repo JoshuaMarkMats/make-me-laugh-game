@@ -2932,52 +2932,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579992357}
   m_CullTransparentMesh: 1
---- !u!1 &584256854
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 584256856}
-  - component: {fileID: 584256855}
-  m_Layer: 0
-  m_Name: DevGiftSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &584256855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584256854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db78418ca0e500342a9c39c2b9351344, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnGift: 0
-  giftObject: {fileID: 1127129779322042748, guid: 13c47e05f6c0dc24896230594be53590, type: 3}
---- !u!4 &584256856
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584256854}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.307039, y: -1.0049707, z: 0.017547475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &584984840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6538,7 +6492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09803922, g: 0.4392157, b: 0.13333334, a: 1}
+  m_Color: {r: 1, g: 0.99215686, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16142,7 +16096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.06
-  currentSanity: 1
+  currentSanity: 99
   maxSanity: 100
   SanityRestoreOnBossKill: 5
   sanityBar: {fileID: 450448308}
@@ -19442,7 +19396,6 @@ SceneRoots:
   - {fileID: 1148975660}
   - {fileID: 1524633387}
   - {fileID: 1414443225}
-  - {fileID: 584256856}
   - {fileID: 1833361294}
   - {fileID: 382659327}
   - {fileID: 1818321008}
