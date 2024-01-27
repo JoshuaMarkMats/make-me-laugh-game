@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Button startButton;
     public Button howToButton;
     public Button exitButton;
+    public Button returnToMain;
 
     // Singleton instance of the game manager
     public static GameManager Instance { get; private set; }
@@ -95,12 +96,15 @@ public class GameManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        UnfreezeGame();
+    /*  UnfreezeGame();
         //AudioManager.Instance.StopAll();
         gameOverMenu.SetActive(false);
         pausemenu.SetActive(false);
         gameState = GameState.MAIN_MENU;
-        SceneManager.LoadScene(MAIN_MENU_SCENE);
+        SceneManager.LoadScene(MAIN_MENU_SCENE);*/
+
+        Debug.Log("Main Menu Open!");
+
     }
 
     /*public void GameWin()
@@ -119,7 +123,7 @@ public class GameManager : MonoBehaviour
 
         if (!gameFrozen)
         {
-            pausemenu.SetActive(true);
+            pausemenu.SetActive(true); 
             FreezeGame();
             gameState = GameState.PAUSED;
         }
@@ -168,4 +172,6 @@ public class GameManager : MonoBehaviour
     
     
     }
+
+ 
 }
