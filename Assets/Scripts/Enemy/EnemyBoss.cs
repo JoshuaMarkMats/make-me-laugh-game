@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyBoss : Enemy
 {
     private float baseSpeed;
+    public LevelScript LevelScript;
 
     protected override void Start()
     {

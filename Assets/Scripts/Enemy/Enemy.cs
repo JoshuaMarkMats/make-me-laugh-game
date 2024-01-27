@@ -140,6 +140,11 @@ public class Enemy : PoolableObject, IDamageable
             EnemyDeath();
     }
 
+    public void Kill()
+    {
+        ChangeHealth(-currentHealth);
+    }
+
     protected virtual void EnemyDeath()
     {
         //AudioManager.Instance.Play(deathSound);

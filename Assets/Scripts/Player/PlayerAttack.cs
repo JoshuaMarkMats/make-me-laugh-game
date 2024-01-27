@@ -33,6 +33,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float giggleStaminaCost = 2;
     [SerializeField]
+    private string giggleSound = "Giggle";
+    [SerializeField]
     private Slider giggleCooldownSlider;
     [SerializeField]
     private TextMeshProUGUI giggleCooldownText;
@@ -47,6 +49,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float laughStaminaCost = 10;
     [SerializeField]
+    private string laughSound = "Laugh";
+    [SerializeField]
     private Slider laughCooldownSlider;
     [SerializeField]
     private TextMeshProUGUI laughCooldownText;
@@ -60,6 +64,8 @@ public class PlayerAttack : MonoBehaviour
     private float boisterousLaughCurrentCooldown;
     [SerializeField]
     private float boisterousLaughStaminaCost = 25;
+    [SerializeField]
+    private string boisterousLaughSound = "BoisterousLaugh";
     [SerializeField]
     private Slider boisterousLaughCooldownSlider;
     [SerializeField]
@@ -117,7 +123,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         //only do aiming if not in the middle of an attack
-        if (!isAttacking)
+        if (!isAttacking && playerController.IsSane)
         {
             float aimAngle = Vector2.SignedAngle(Vector2.right, GetAimDirection());
             pivotParent.transform.eulerAngles = new Vector3(0, 0, aimAngle);
@@ -129,6 +135,9 @@ public class PlayerAttack : MonoBehaviour
 
     void ManageTimers()
     {
+        if (!playerController.IsSane)
+            return;
+
         if (currentStamina < maxStamina)
         {
             currentStamina += Time.deltaTime * staminaRegen;
@@ -163,10 +172,12 @@ public class PlayerAttack : MonoBehaviour
 
     void OnGiggle()
     {
-        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking)
+        if (giggleCurrentCooldown > 0 || currentStamina < giggleStaminaCost || isAttacking || !playerController.IsSane)
             return;
 
-        isAttacking= true;
+        AudioManager.Instance.Play(giggleSound);
+
+        isAttacking = true;
         playerController.IsMovementPaused = true;
         playerController.animator.SetTrigger(GIGGLE_TRIGGER);
 
@@ -178,8 +189,10 @@ public class PlayerAttack : MonoBehaviour
 
     void OnLaugh()
     {
-        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking)
+        if (laughCurrentCooldown > 0 || currentStamina < laughStaminaCost || isAttacking || !playerController.IsSane)
             return;
+
+        AudioManager.Instance.Play(laughSound);
 
         isAttacking = true;
         playerController.IsMovementPaused = true;
@@ -193,8 +206,10 @@ public class PlayerAttack : MonoBehaviour
 
     void OnBoisterousLaugh()
     {
-        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking)
+        if (boisterousLaughCurrentCooldown > 0 || currentStamina < boisterousLaughStaminaCost || isAttacking || !playerController.IsSane)
             return;
+
+        AudioManager.Instance.Play(boisterousLaughSound);
 
         isAttacking = true;
         playerController.IsMovementPaused = true;
@@ -210,7 +225,6 @@ public class PlayerAttack : MonoBehaviour
     {
         isAttacking = false;
         playerController.IsMovementPaused = false;
-        //animator.SetTrigger(FINISH_ATTACK_TRIGGER);
     }
 
     private Vector2 GetAimDirection()

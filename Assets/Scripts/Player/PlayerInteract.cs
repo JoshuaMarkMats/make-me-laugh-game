@@ -16,6 +16,8 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]
     private LayerMask childLayer;
 
+    private PlayerController playerController;
+
     private void OnDrawGizmosSelected()
     {
         //interaction range
@@ -23,21 +25,15 @@ public class PlayerInteract : MonoBehaviour
         Gizmos.DrawWireSphere((Vector2)transform.position + interactOffset, interactRange);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerController = GetComponent<PlayerController>();
     }
 
     private void OnInteract()
     {
-        //Debug.Log("interacting");        
+        if (!playerController.IsSane)
+            return;
 
         //rip redundant checks if current gift exists
         if (giftSlot.CurrentGift != null)

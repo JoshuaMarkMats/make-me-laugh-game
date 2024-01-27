@@ -31,11 +31,21 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField]
     private Sprite veryHighSanityImage;
 
+    [Space()]
     public bool IsMovementPaused = false;
+    [SerializeField]
+    private LevelScript levelScript;
 
     public Animator animator;
+    private Vector2 lookDirection = Vector2.zero;
     private Vector2 moveDirection = Vector2.zero;
-    private Rigidbody2D playerRigidbody;  
+    private Rigidbody2D playerRigidbody;
+
+    private const string IS_MOVING_BOOL = "isMoving";
+    private const string LOOKX_VALUE = "lookX";
+    private const string LOOKY_VALUE = "lookY";
+
+    public bool IsSane { get { return isSane; } }
 
     private void Awake()
     {
@@ -50,7 +60,26 @@ public class PlayerController : MonoBehaviour, IDamageable
         sanityBar.SetMaxValue(maxSanity);
         sanityBar.SetValue(currentSanity);
 
-        LevelScript.bossKillEvent.AddListener(BossKillHeal);
+        levelScript.bossKillEvent.AddListener(BossKillHeal);
+    }
+
+    private void Update()
+    {
+        //don't do the sprite stuff if player is dead or paused
+        if (!isSane || IsMovementPaused)
+            return;
+
+        //sprite direction
+        if (!Mathf.Approximately(moveDirection.x, 0.0f) || !Mathf.Approximately(moveDirection.y, 0.0f))
+            lookDirection = moveDirection;
+        animator.SetFloat(LOOKX_VALUE, lookDirection.x);
+        animator.SetFloat(LOOKY_VALUE, lookDirection.y);
+
+        //sprite idle or moving
+        if (!Mathf.Approximately(moveDirection.x, 0.0f) || !Mathf.Approximately(moveDirection.y, 0.0f))
+            animator.SetBool(IS_MOVING_BOOL, true);
+        else
+            animator.SetBool(IS_MOVING_BOOL, false);
     }
 
     // Update is called once per frame
@@ -84,7 +113,15 @@ public class PlayerController : MonoBehaviour, IDamageable
         UpdateSanityIcon();
 
         if (currentSanity <= 0)
-           GameOver();
+        {
+            levelScript.GameOver();
+            isSane = false;
+        }
+        else if (currentSanity >= maxSanity)
+        {
+            levelScript.GameWin();
+        }
+            
 
     }
 
@@ -102,10 +139,5 @@ public class PlayerController : MonoBehaviour, IDamageable
             sanityIcon.sprite = veryHighSanityImage;
 
 
-    }
-
-    private void GameOver()
-    {
-        LevelScript.bossKillEvent.RemoveAllListeners();
     }
 }
