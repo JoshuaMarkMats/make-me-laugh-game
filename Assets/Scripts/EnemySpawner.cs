@@ -50,10 +50,11 @@ public class EnemySpawner : MonoBehaviour
     private float SpawnDelayIncrease = 0.5f;
     [SerializeField]
     private float SpawnInterval = 0.1f; //time delay between individual spawns
+
     [Space()]
-    [SerializeField]
-    private float spawnDistance = 5f;
-    private int currentWave = 1;
+
+    [SerializeField] private float spawnDistance = 5f;
+    [SerializeField] private int currentWave = 1;
 
     [Space()]
 

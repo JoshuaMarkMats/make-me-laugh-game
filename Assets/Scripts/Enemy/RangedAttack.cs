@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.Mail;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class RangedAttack : MeleeAttack
 {
@@ -17,11 +12,13 @@ public class RangedAttack : MeleeAttack
     {
         if (!isAttacking && enemyController.IsAlive)
         {
+            //Debug.Log($"{gameObject.name} is getting ready to attack");
             if (enemyController.VectorToTarget.sqrMagnitude <= detectionRange * detectionRange)
             {
+                //Debug.Log($"{gameObject.name} is attacking");
                 enemyController.IsMovementPaused = true;
                 isAttacking = true;
-                animator.SetTrigger(ATTACK_TRIGGER);
+                animator.Play(ATTACK_STATE);
             }
         }            
     }

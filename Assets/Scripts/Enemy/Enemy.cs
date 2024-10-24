@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
 public class Enemy : PoolableObject, IDamageable
 {
@@ -10,8 +8,6 @@ public class Enemy : PoolableObject, IDamageable
     private int maxHealth = 10;
     [SerializeField]
     private int currentHealth = 10;
-    /*[SerializeField]
-    private string deathSound; when audio manager kicks in */
     public UnityEvent enemyDeathEvent = new();
     [Space()]
 
@@ -49,6 +45,8 @@ public class Enemy : PoolableObject, IDamageable
     private float lookDirection = 1;
     protected Rigidbody2D enemyRigidbody;
     private SpriteRenderer spriteRenderer;
+
+    private const string DEATH_STATE = "Death";
 
     public float LookDirection { get { return lookDirection; } }
     public bool IsAlive
@@ -155,7 +153,7 @@ public class Enemy : PoolableObject, IDamageable
         //Debug.Log($"{gameObject.name} dies");
         
         isAlive = false;
-        animator.SetTrigger("death");
+        animator.Play(DEATH_STATE);
         /*if (flashCoroutine != null)
             StopCoroutine(flashCoroutine);*/
         //spriteRenderer.material = baseMaterial;

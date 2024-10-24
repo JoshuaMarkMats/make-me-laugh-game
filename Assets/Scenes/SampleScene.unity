@@ -1923,7 +1923,7 @@ GameObject:
   - component: {fileID: 450448309}
   - component: {fileID: 450448308}
   m_Layer: 5
-  m_Name: Sanity
+  m_Name: SanityMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2001,7 +2001,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 84185496}
   m_HandleRect: {fileID: 0}
@@ -3384,7 +3384,7 @@ GameObject:
   - component: {fileID: 621160633}
   - component: {fileID: 621160632}
   m_Layer: 5
-  m_Name: GiftSlotBackground
+  m_Name: GiftSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5990,7 +5990,7 @@ GameObject:
   - component: {fileID: 1040928792}
   - component: {fileID: 1040928791}
   m_Layer: 5
-  m_Name: GiftSlot
+  m_Name: SelectedGiftIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18790,6 +18790,7 @@ MonoBehaviour:
   SpawnDelayIncrease: 0.5
   SpawnInterval: 0.7
   spawnDistance: 9
+  currentWave: 1
   player: {fileID: 1444135702}
   levelScript: {fileID: 382659326}
 --- !u!4 &1818321008
@@ -19899,7 +19900,7 @@ GameObject:
   - component: {fileID: 2072614215}
   - component: {fileID: 2072614214}
   m_Layer: 5
-  m_Name: Stamina
+  m_Name: StaminaMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19977,7 +19978,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1202740783}
   m_HandleRect: {fileID: 0}

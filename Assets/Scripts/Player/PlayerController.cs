@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     private Sprite veryHighSanityImage;
 
     [Space()]
+    [Tooltip("Whether movement is paused (does not affect direction triggers)")]
     public bool IsMovementPaused = false;
     [SerializeField]
     private LevelScript levelScript;
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         sanityBar.SetMaxValue(maxSanity);
         sanityBar.SetValue(currentSanity);
 
-        levelScript.bossKillEvent.AddListener(BossKillHeal);
+        levelScript.bossKillEvent.AddListener(() => ChangeHealth(SanityRestoreOnBossKill));
     }
 
     private void Update()
@@ -97,11 +98,6 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         moveDirection = inputValue.Get<Vector2>().normalized;
         
-    }
-
-    private void BossKillHeal()
-    {
-        ChangeHealth(SanityRestoreOnBossKill);
     }
 
     public void ChangeHealth(int value)
