@@ -7,24 +7,19 @@ using UnityEngine.InputSystem;
 public class MeleeAttack : MonoBehaviour
 {
     /* Attack */
-    [SerializeField]
-    protected int damage = 10;
-    [SerializeField]
-    protected float detectionRange = 2f;
-    protected bool isAttacking;
-    [SerializeField]
-    protected string attackSound;
-    [SerializeField]
-    private AttackArea attackArea;
+    [SerializeField] protected int damage = 10;
+    [SerializeField] protected float detectionRange = 2f;
+    [SerializeField] protected bool isAttacking;
+    [SerializeField] protected string attackSound;
+    [SerializeField] private AttackArea attackArea;
 
     [Space()]
-    [SerializeField]
-    private Transform pivotParent;
+    [SerializeField] private Transform pivotParent;
 
     protected Enemy enemyController;
     protected Animator animator;
 
-    protected const string ATTACK_TRIGGER = "attack";
+    protected const string ATTACK_STATE = "Attack";
 
     void Start()
     {
@@ -43,12 +38,13 @@ public class MeleeAttack : MonoBehaviour
         {
             float aimAngle = Vector2.SignedAngle(Vector2.right, enemyController.VectorToTarget.normalized);
             pivotParent.eulerAngles = new Vector3(0, 0, aimAngle);
-
+            
+            //distance to target less than detect range
             if (enemyController.VectorToTarget.sqrMagnitude <= detectionRange * detectionRange)
             {
                 enemyController.IsMovementPaused = true;
                 isAttacking = true;
-                animator.SetTrigger(ATTACK_TRIGGER);
+                animator.Play(ATTACK_STATE);
             }
         }            
     }
@@ -69,6 +65,7 @@ public class MeleeAttack : MonoBehaviour
 
     private void FinishAttack()
     {
+        Debug.Log($"{gameObject.name} finished attack");
         isAttacking = false;
         enemyController.IsMovementPaused = false;
     }

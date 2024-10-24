@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.Mail;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class BossAttack : MonoBehaviour
 {
@@ -37,8 +33,8 @@ public class BossAttack : MonoBehaviour
     private Enemy enemyController;
     private Animator animator;
 
-    private const string BASIC_ATTACK_TRIGGER = "basicAttack";
-    private const string AOE_ATTACK_TRIGGER = "aoeAttack";
+    private const string BASIC_ATTACK_STATE = "Basic Attack";
+    private const string AOE_ATTACK_STATE = "AoE Attack";
 
     void Start()
     {
@@ -62,7 +58,7 @@ public class BossAttack : MonoBehaviour
             {
                 enemyController.IsMovementPaused = true;
                 isAttacking = true;
-                animator.SetTrigger(Random.value < 0.5f ? BASIC_ATTACK_TRIGGER : AOE_ATTACK_TRIGGER);
+                animator.Play(Random.value < 0.5f ? BASIC_ATTACK_STATE : AOE_ATTACK_STATE); //random attack
             }
         }            
     }
